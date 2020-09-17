@@ -1,4 +1,4 @@
-is_nedic_nordic_faith = {
+﻿is_nedic_nordic_faith = {
 	group = "special"
 	
 	is_available_on_create = {

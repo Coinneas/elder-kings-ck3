@@ -234,70 +234,16 @@
 	faiths = {
 		imperial_cult = {
 			color = { 1.0 0.8 0.9 }
-			#religious_head = k_papal_state
-			graphical_faith = "catholic_gfx"
-			
 			icon = imperial_cult
 
 			#Tenets
 			doctrine = tenet_monasticism
 			doctrine = tenet_bhakti
 			doctrine = tenet_adaptive
-
-			holy_order_names = {
-				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
-			}
-
-			localization = {
-				#FertilityGod
-				FertilityGodName = imperial_cult_fertility_god_name
-				FertilityGodNamePossessive = imperial_cult_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
-
-				#WealthGod
-				WealthGodName = imperial_cult_wealth_god_name
-				WealthGodNamePossessive = imperial_cult_wealth_god_name_possessive
-				WealthGodSheHe = CHARACTER_SHEHE_HE
-				WealthGodHerHis = CHARACTER_HERHIS_HIS
-				WealthGodHerHim = CHARACTER_HERHIM_HIM
-
-				#HouseholdGod
-				HouseholdGodName = imperial_cult_household_god_name
-				HouseholdGodNamePossessive = imperial_cult_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_HE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
-				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
-
-				#KnowledgeGod
-				KnowledgeGodName = imperial_cult_knowledge_god_name
-				KnowledgeGodNamePossessive = imperial_cult_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
-
-				#WarGod
-				WarGodName = imperial_cult_war_god_name
-				WarGodNamePossessive = imperial_cult_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
-
-				#WaterGod
-				WaterGodName = imperial_cult_water_god_name
-				WaterGodNamePossessive = imperial_cult_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
-			}
 		}
 		
 		nord_cult = {
 			color = { 0.9 0.8 1 }
-			#religious_head = k_papal_state
-			graphical_faith = "catholic_gfx"
-
 			icon = nord_cult
 
 			#Main Group
@@ -308,176 +254,26 @@
 			doctrine = tenet_monasticism
 			doctrine = tenet_bhakti
 			doctrine = tenet_children_skyrim
-
-			holy_order_names = {
-				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
-			}
-
-			localization = {
-				#FertilityGod
-				FertilityGodName = nord_cult_fertility_god_name
-				FertilityGodNamePossessive = nord_cult_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
-
-				#WealthGod
-				WealthGodName = nord_cult_wealth_god_name
-				WealthGodNamePossessive = nord_cult_wealth_god_name_possessive
-				WealthGodSheHe = CHARACTER_SHEHE_HE
-				WealthGodHerHis = CHARACTER_HERHIS_HIS
-				WealthGodHerHim = CHARACTER_HERHIM_HIM
-
-				#HouseholdGod
-				HouseholdGodName = nord_cult_household_god_name
-				HouseholdGodNamePossessive = nord_cult_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_HE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
-				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
-
-				#KnowledgeGod
-				KnowledgeGodName = nord_cult_knowledge_god_name
-				KnowledgeGodNamePossessive = nord_cult_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
-
-				#WarGod
-				WarGodName = nord_cult_war_god_name
-				WarGodNamePossessive = nord_cult_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
-
-				#WaterGod
-				WaterGodName = nord_cult_water_god_name
-				WaterGodNamePossessive = nord_cult_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
-			}
 		}
 		
 		breton_cult = {
 			color = { 0.8 1.0 0.9 }
-			#religious_head = k_papal_state
-			graphical_faith = "catholic_gfx"
-
 			icon = breton_cult
 
 			#Tenets
 			doctrine = tenet_monasticism
 			doctrine = tenet_bhakti
 			doctrine = tenet_aldmeri_syncretism
-
-			holy_order_names = {
-				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
-			}
-
-			localization = {
-				#FertilityGod
-				FertilityGodName = breton_cult_fertility_god_name
-				FertilityGodNamePossessive = breton_cult_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
-
-				#WealthGod
-				WealthGodName = breton_cult_wealth_god_name
-				WealthGodNamePossessive = breton_cult_wealth_god_name_possessive
-				WealthGodSheHe = CHARACTER_SHEHE_HE
-				WealthGodHerHis = CHARACTER_HERHIS_HIS
-				WealthGodHerHim = CHARACTER_HERHIM_HIM
-
-				#HouseholdGod
-				HouseholdGodName = breton_cult_household_god_name
-				HouseholdGodNamePossessive = breton_cult_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_HE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
-				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
-
-				#KnowledgeGod
-				KnowledgeGodName = breton_cult_knowledge_god_name
-				KnowledgeGodNamePossessive = breton_cult_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
-
-				#WarGod
-				WarGodName = breton_cult_war_god_name
-				WarGodNamePossessive = breton_cult_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
-
-				#WaterGod
-				WaterGodName = breton_cult_water_god_name
-				WaterGodNamePossessive = breton_cult_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
-			}
 		}
 		
 		redguard_cult = {
 			color = { 0.8 0.3 0.0 }
-			#religious_head = k_papal_state
-			graphical_faith = "catholic_gfx"
-
 			icon = redguard_cult
 
 			#Tenets
 			doctrine = tenet_communion
 			doctrine = tenet_yokudan_syncretism
 			doctrine = tenet_ancestor_worship
-
-			holy_order_names = {
-				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
-			}
-
-			localization = {
-				#FertilityGod
-				FertilityGodName = redguard_cult_fertility_god_name
-				FertilityGodNamePossessive = redguard_cult_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
-
-				#WealthGod
-				WealthGodName = redguard_cult_wealth_god_name
-				WealthGodNamePossessive = redguard_cult_wealth_god_name_possessive
-				WealthGodSheHe = CHARACTER_SHEHE_HE
-				WealthGodHerHis = CHARACTER_HERHIS_HIS
-				WealthGodHerHim = CHARACTER_HERHIM_HIM
-
-				#HouseholdGod
-				HouseholdGodName = redguard_cult_household_god_name
-				HouseholdGodNamePossessive = redguard_cult_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_HE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
-				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
-
-				#KnowledgeGod
-				KnowledgeGodName = redguard_cult_knowledge_god_name
-				KnowledgeGodNamePossessive = redguard_cult_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
-
-				#WarGod
-				WarGodName = redguard_cult_war_god_name
-				WarGodNamePossessive = redguard_cult_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
-
-				#WaterGod
-				WaterGodName = redguard_cult_water_god_name
-				WaterGodNamePossessive = redguard_cult_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
-			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-celestial_religion = {
+﻿celestial_religion = {
 	family = rf_aurbis
 
 	doctrine = aurbic_hostility_doctrine
@@ -234,18 +234,12 @@ celestial_religion = {
 	faiths = {
 		celestial_cult = {
 			color = { 0.15 0.8 0.15 }
-			#religious_head = k_papal_state
 			graphical_faith = "catholic_gfx"
-			
 
 			#Tenets
 			doctrine = tenet_monasticism
 			doctrine = tenet_astrology
 			doctrine = tenet_literalism
-
-			holy_order_names = {
-				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
-			}
 		}
 	}
 }

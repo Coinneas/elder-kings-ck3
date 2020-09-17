@@ -1,4 +1,4 @@
-malacath_religion = {
+﻿malacath_religion = {
 	family = rf_daedra
 	graphical_faith = pagan_gfx
 
