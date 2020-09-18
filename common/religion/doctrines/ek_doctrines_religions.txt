@@ -19,7 +19,7 @@
 		}
 	}
 	
-	aurbis_hostility_doctrine = {
+	aurbic_hostility_doctrine = {
 		visible = no
 		parameters = {
 			hostility_same_religion = 1
