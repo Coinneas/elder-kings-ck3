@@ -141,7 +141,7 @@ doctrine_bastardry = {
 	}
 }
 
-### Doesn't make much sense in the world of the Elder Scrolls
+### EK EDIT: Doesn't make much sense in the world of the Elder Scrolls
 # doctrine_homosexuality = {
 	# group = "crimes"
 	# doctrine_homosexuality_crime = {
@@ -238,101 +238,156 @@ doctrine_deviancy = {
 	}
 }
 
-doctrine_adultery_men = {
+### EK EDIT: Lumped both in a single doctrine
+doctrine_adultery = {
 	group = "crimes"
-	doctrine_adultery_men_crime = {
+	
+	doctrine_adultery_crime = {
 		piety_cost = {
 			value = faith_doctrine_cost_mid
 			if = {
-				limit = { has_doctrine = doctrine_adultery_men_crime }
+				limit = { has_doctrine = doctrine_adultery_crime }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 			else_if = {
-				limit = { has_doctrine = doctrine_adultery_men_accepted }
+				limit = { has_doctrine = doctrine_adultery_accepted }
 				multiply = faith_changed_doctrine_cost_mult_two_step
 			}
 		}
 		parameters = {
 			adultery_male_crime = yes
+			adultery_female_crime = yes
 		}
 	}
-	doctrine_adultery_men_shunned = {
+	
+	doctrine_adultery_shunned = {
 		piety_cost = {
 			value = faith_doctrine_cost_mid
 			if = {
-				limit = { has_doctrine = doctrine_adultery_men_shunned }
+				limit = { has_doctrine = doctrine_adultery_shunned }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
 		parameters = {
 			adultery_male_shunned = yes
+			adultery_female_shunned = yes
 		}
 	}
-	doctrine_adultery_men_accepted = {
+	
+	doctrine_adultery_accepted = {
 		piety_cost = {
 			value = faith_doctrine_cost_mid
 			if = {
-				limit = { has_doctrine = doctrine_adultery_men_accepted }
+				limit = { has_doctrine = doctrine_adultery_accepted }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 			else_if = {
-				limit = { has_doctrine = doctrine_adultery_men_crime }
+				limit = { has_doctrine = doctrine_adultery_crime }
 				multiply = faith_changed_doctrine_cost_mult_two_step
 			}
 		}
 		parameters = {
 			adultery_male_accepted = yes
-		}
-	}
-}
-
-doctrine_adultery_women = {
-	group = "crimes"
-	doctrine_adultery_women_crime = {
-		piety_cost = {
-			value = faith_doctrine_cost_mid
-			if = {
-				limit = { has_doctrine = doctrine_adultery_women_crime }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-			else_if = {
-				limit = { has_doctrine = doctrine_adultery_women_accepted }
-				multiply = faith_changed_doctrine_cost_mult_two_step
-			}
-		}
-		parameters = {
-			adultery_female_crime = yes
-		}
-	}
-	doctrine_adultery_women_shunned = {
-		piety_cost = {
-			value = faith_doctrine_cost_mid
-			if = {
-				limit = { has_doctrine = doctrine_adultery_women_shunned }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-		parameters = {
-			adultery_female_shunned = yes
-		}
-	}
-	doctrine_adultery_women_accepted = {
-		piety_cost = {
-			value = faith_doctrine_cost_mid
-			if = {
-				limit = { has_doctrine = doctrine_adultery_women_accepted }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-			else_if = {
-				limit = { has_doctrine = doctrine_adultery_women_crime }
-				multiply = faith_changed_doctrine_cost_mult_two_step
-			}
-		}
-		parameters = {
 			adultery_female_accepted = yes
 		}
 	}
 }
+
+# doctrine_adultery_men = {
+	# group = "crimes"
+	# doctrine_adultery_men_crime = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_men_crime }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+			# else_if = {
+				# limit = { has_doctrine = doctrine_adultery_men_accepted }
+				# multiply = faith_changed_doctrine_cost_mult_two_step
+			# }
+		# }
+		# parameters = {
+			# adultery_male_crime = yes
+		# }
+	# }
+	# doctrine_adultery_men_shunned = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_men_shunned }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+		# }
+		# parameters = {
+			# adultery_male_shunned = yes
+		# }
+	# }
+	# doctrine_adultery_men_accepted = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_men_accepted }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+			# else_if = {
+				# limit = { has_doctrine = doctrine_adultery_men_crime }
+				# multiply = faith_changed_doctrine_cost_mult_two_step
+			# }
+		# }
+		# parameters = {
+			# adultery_male_accepted = yes
+		# }
+	# }
+# }
+
+# doctrine_adultery_women = {
+	# group = "crimes"
+	# doctrine_adultery_women_crime = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_women_crime }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+			# else_if = {
+				# limit = { has_doctrine = doctrine_adultery_women_accepted }
+				# multiply = faith_changed_doctrine_cost_mult_two_step
+			# }
+		# }
+		# parameters = {
+			# adultery_female_crime = yes
+		# }
+	# }
+	# doctrine_adultery_women_shunned = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_women_shunned }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+		# }
+		# parameters = {
+			# adultery_female_shunned = yes
+		# }
+	# }
+	# doctrine_adultery_women_accepted = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_adultery_women_accepted }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+			# else_if = {
+				# limit = { has_doctrine = doctrine_adultery_women_crime }
+				# multiply = faith_changed_doctrine_cost_mult_two_step
+			# }
+		# }
+		# parameters = {
+			# adultery_female_accepted = yes
+		# }
+	# }
+# }
 
 doctrine_kinslaying = {
 	group = "crimes"

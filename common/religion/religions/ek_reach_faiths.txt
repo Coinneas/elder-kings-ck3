@@ -17,8 +17,6 @@
 	doctrine = doctrine_consanguinity_unrestricted
 
 	#Crimes
-	doctrine = doctrine_adultery_men_accepted
-	doctrine = doctrine_adultery_women_accepted
 	doctrine = doctrine_kinslaying_shunned
 	doctrine = doctrine_deviancy_accepted
 	doctrine = doctrine_witchcraft_accepted
@@ -30,8 +28,10 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	
 	### EK Doctrines
+	doctrine = doctrine_adultery_shunned
 	doctrine = doctrine_daedra_worship_accepted
 	doctrine = doctrine_lycanthropy_accepted
+	doctrine = doctrine_vampirism_accepted
 	doctrine = doctrine_necromancy_accepted
 
 	#Special Doctrine for Reach Syncretism

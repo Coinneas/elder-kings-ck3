@@ -16,8 +16,6 @@
 	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 
 	#Crimes
-	doctrine = doctrine_adultery_men_shunned
-	doctrine = doctrine_adultery_women_crime
 	doctrine = doctrine_kinslaying_close_kin_crime
 	doctrine = doctrine_deviancy_crime
 	doctrine = doctrine_witchcraft_crime
@@ -27,6 +25,13 @@
 	doctrine = doctrine_clerical_gender_male_only
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+	
+	### EK Doctrines
+	doctrine = doctrine_adultery_shunned
+	doctrine = doctrine_daedra_worship_forbidden
+	doctrine = doctrine_lycanthropy_outlawed
+	doctrine = doctrine_vampirism_pragmatic
+	doctrine = doctrine_necromancy_pragmatic
 
 	#Special Doctrine for Yokudan Syncretism
 	doctrine = special_doctrine_is_yokudan_faith

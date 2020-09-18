@@ -299,10 +299,7 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
+			always = yes
 		}
 		
 		parameters = {
@@ -335,10 +332,7 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
+			always = yes
 		}
 		
 		parameters = {
@@ -371,10 +365,7 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
+			always = yes
 		}
 		
 		parameters = {
@@ -407,10 +398,7 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
+			always = yes
 		}
 		
 		parameters = {
@@ -443,10 +431,7 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
+			always = yes
 		}
 		
 		parameters = {
@@ -479,7 +464,11 @@ doctrine_core_tenets = {
 		}
 
 		can_pick = {
-			always = yes
+			custom_description = {
+				text = doctrine_inverted_pluralism_fundamentalist_trigger
+				NOT = {	flag:doctrine_pluralism_righteous = { is_in_list = selected_doctrines } }
+				NOT = {	flag:doctrine_pluralism_pluralistic = { is_in_list = selected_doctrines } }
+			}
 		}
 		
 		traits = {
@@ -487,9 +476,6 @@ doctrine_core_tenets = {
 				intellect_good_3
 				physique_good_3
 				beauty_good_3
-			}
-			sins = {
-				# TODO: Add the Impure trait
 			}
 		}
 		

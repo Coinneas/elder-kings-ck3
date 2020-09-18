@@ -146,6 +146,14 @@
     celestial_cult_desc:0 "The Star-Gazers are a sect who have rediscovered the old Nedic folk religion of Craglorn. They venerate the Celestials, astral beings who are personifications of the Constellations that travel across the sky."
  
  ### Doctrines
+ doctrine_adultery_name:0 "Adultery"
+ doctrine_adultery_crime_name:0 "Criminal"
+    doctrine_adultery_crime_desc:0 "It is a crime for men and women to engage in intercourse outside of marriage, and they shall be punished accordingly."
+ doctrine_adultery_shunned_name:0 "Shunned"
+    doctrine_adultery_shunned_desc:0 "It is sinful for men and women to engage in intercourse outside of marriage, but like all sins it is the divine who must judge them for their failings."
+ doctrine_adultery_accepted_name:0 "Accepted"
+    doctrine_adultery_accepted_desc:0 "There is nothing inherently wrong about a man or a woman deciding to engage in intercourse outside of marriage, so the decision is their alone."
+ 
  doctrine_daedra_worship_name:0 "Daedric Worship"
  doctrine_daedra_worship_forbidden_name:0 "Forbidden"
     doctrine_daedra_worship_forbidden_desc:0 "The very core of our faith and of our society is in total contradictions with the nature of the Daedric Princes. Worshipping them is among the greatest offenses against our faith."
@@ -156,7 +164,7 @@
  doctrine_daedra_worship_accepted_name:0 "Accepted"
     doctrine_daedra_worship_accepted_desc:0 "All adherents to our faith are free to worship the Daedric Princes."
  
- doctrine_necromancy_name:0 "Status of Necromancy"
+ doctrine_necromancy_name:0 "Necromancy"
  doctrine_necromancy_outlawed_name:0 "Outlawed"
     doctrine_necromancy_outlawed_desc:0 "No one should ever be allowed to break the sacred circle of life and death. To do so would threaten the very balance of your world."
     doctrine_parameter_necromancy_criminal:0 "Characters with the Necromancer [trait|E] are [criminals|E]"
@@ -170,7 +178,7 @@
  doctrine_necromancy_accepted_name:0 "Accepted"
     doctrine_necromancy_accepted_desc:0 "Achieving mastery over the cycle of life and death should be seen as an achievement and a victory, not a crime."
  
- doctrine_lycanthropy_name:0 "Status of Lycanthropy"
+ doctrine_lycanthropy_name:0 "Lycanthropy"
  doctrine_lycanthropy_outlawed_name:0 "Outlawed"
     doctrine_lycanthropy_outlawed_desc:0 "Werebeasts are an affront to nature and a threat to society. They cannot be allowed to threaten our existence."
     doctrine_parameter_lycanthropy_criminal:0 "All characters afflicted with Lycanthropy are considered [criminals|E]"
@@ -180,6 +188,17 @@
     doctrine_parameter_evil_lycanthropy_criminal:0 "Characters with the Known Lycanthrope [trait|E] are [criminals|E]"
  doctrine_lycanthropy_accepted_name:0 "Accepted"
     doctrine_lycanthropy_accepted_desc:0 "While lycanthropes can be seen as dangerous, those who master it should be celebrated."
+    
+ doctrine_vampirism_name:0 "Vampirism"
+ doctrine_vampirism_outlawed_name:0 "Outlawed"
+    doctrine_vampirism_outlawed_desc:0 "Vampires are mere beasts, hell bent on hunting mortal kind. We must hunt them down before they can hunt us."
+    doctrine_parameter_vampirism_criminal:0 "All characters afflicted with vampirism are considered [criminals|E]"
+ doctrine_vampirism_pragmatic_name:0 "Pragmatic"
+    doctrine_vampirism_pragmatic_desc:0 "The danger that rabid vampires poses must not force us to hunt down those who wish to live in peace."
+    doctrine_parameter_benevolent_vampirism_shunned:0 "Characters with the Benevolent Vampire [trait|E] or with the Vampire [secret|E] are [shunned|E]"
+    doctrine_parameter_evil_vampirism_criminal:0 "Characters with the Known Vampire [trait|E] are [criminals|E]"
+ doctrine_vampirism_accepted_name:0 "Accepted"
+    doctrine_vampirism_accepted_desc:0 "Vampirism must not be seen as a curse, for it blesses us with untold strenghts and abilities."
  
  ### Tenets
  tenet_nedic_nordic_syncretism_name:0 "Nedic-Nordic Syncretism"
@@ -238,9 +257,9 @@
     doctrine_parameter_children_education_learning:0 "Children are more likely to receive and do well in a Learning education"
     
  tenet_divine_purity_name:0 "Divine Purity"
-    tenet_divine_purity_desc:0 "We are the children of the Gods. We must pride ourselves in our purity, and make sure not to taint ourselves with the lesser beings, less we stray away from the Divine."
-    doctrine_parameter_children_bad_congenital_trait_impure:0 "Children who are born with bad congenital traits are considered Impure"
-    doctrine_parameter_character_impure_foreign_relationships_impure:0 "Characters who form close relationships with Impure characters, or characters of other faiths are considered Impure"
+    tenet_divine_purity_desc:0 "We are the children of the Gods. We must pride ourselves in our purity, and make sure not to taint ourselves with the lesser beings, lest we stray away from the Divine."
+    doctrine_parameter_children_bad_congenital_trait_impure:0 "Children who are born with bad congenital traits are considered [impure|E]"
+    doctrine_parameter_character_impure_foreign_relationships_impure:0 "Characters who form close relationships with [impure|E] characters, or characters of other faiths are considered [impure|E]"
  
  ### Syncretism
  nedic_nordic_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"

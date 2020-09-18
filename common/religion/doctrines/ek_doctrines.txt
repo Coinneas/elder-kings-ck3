@@ -1,4 +1,35 @@
-﻿doctrine_daedra_worship = {
+﻿### Main doctrines
+# doctrine_number_deities = {
+	# group = "main_group"
+
+	# doctrine_number_deities_monotheism = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_number_deities_monotheism }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+		# }
+		# parameters = {
+			
+		# }
+	# }
+	# doctrine_number_deities_polytheism = {
+		# piety_cost = {
+			# value = faith_doctrine_cost_mid
+			# if = {
+				# limit = { has_doctrine = doctrine_number_deities_polytheism }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+		# }
+		# parameters = {
+			# polytheism_patron_deities = yes
+		# }
+	# }
+# }
+
+### Crimes
+doctrine_daedra_worship = {
 	group = "crimes"
 	
 	doctrine_daedra_worship_forbidden = {
@@ -63,6 +94,37 @@ doctrine_lycanthropy = {
 	}
 }
 
+doctrine_vampirism = {
+	group = "crimes"
+	
+	doctrine_vampirism_outlawed = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+			vampirism_criminal = yes
+		}
+	}
+
+	doctrine_vampirism_pragmatic = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+			benevolent_vampirism_shunned = yes
+			evil_vampirism_criminal = yes
+		}
+	}
+
+	doctrine_vampirism_accepted = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+		}
+	}
+}
+
 doctrine_necromancy = {
 	group = "crimes"
 	
@@ -72,7 +134,6 @@ doctrine_necromancy = {
 		}
 		parameters = {
 			necromancy_criminal = yes
-			vampirism_criminal = yes
 			undeath_criminal = yes
 		}
 	}
@@ -83,8 +144,6 @@ doctrine_necromancy = {
 		}
 		parameters = {
 			necromancy_shunned = yes
-			benevolent_vampirism_shunned = yes
-			evil_vampirism_criminal = yes
 			undeath_criminal = yes
 		}
 	}
