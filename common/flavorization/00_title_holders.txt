@@ -17,12 +17,30 @@
 # if this is not specified ( or 'top_liege = yes' the default ) then it is the top liege of that character
 # that is tested, this means that most title flavor comes from the top liege of the title not the holder
 
+#sultan = { #Example
+#	gender = male
+#	special = holder
+#	tier = kingdom
+	#	governments = { feudal_government clan_government }
+#	religions = { islam_religion }
+#}
 
 #############################################
 
 # Special Titles
 
+#ecumenical_patriarch = {
+#	type = character
+#	gender = male
+#	special = holder
+#	tier = kingdom
+#	priority = 301
+#	titles = { k_orthodox }
+#	top_liege = no
+#}
+
 # Religious Titles
+
 head_of_faith_male = {
 	type = character
 	gender = male
@@ -54,174 +72,17 @@ realm_priest_female = {
 	priority = 299
 	council_position = councillor_court_chaplain
 }
+
 ##############################################
 #Theocracy titles, religious (group) localization.
 
-# Nedic-Nordic Religion
-# Yokudan Religion
-# Aldmer Religion
-# Reach Religion
-
-#Nedic-Nordic Religion
-
-baron_theocracy_male_nedic_nordic_religion = {
+#Yokudan Group
+baron_theocracy_yokudan_religion = {
 	type = character
-	gender = male
 	special = holder
 	tier = barony
-	priority = 7
+	priority = 10
 	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-baron_theocracy_female_nedic_nordic_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = barony
-	priority = 7
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-barony_theocracy_nedic_nordic_religion = {
-	type = title
-	tier = barony
-	top_liege = no
-	priority = 7
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-count_theocracy_male_nedic_nordic_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-count_theocracy_female_nedic_nordic_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-county_theocracy_nedic_nordic_religion = {
-	type = title
-	tier = county
-	top_liege = no
-	priority = 18
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-duke_theocracy_male_nedic_nordic_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 27
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-duke_theocracy_female_nedic_nordic_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 27
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-duchy_theocracy_nedic_nordic_religion = {
-	type = title
-	tier = duchy
-	top_liege = no
-	priority = 27
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-king_theocracy_male_nedic_nordic_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-king_theocracy_female_nedic_nordic_religion = {
-	type = character
-	gender = female
-	special = kingdom
-	tier = county
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-kingdom_theocracy_nedic_nordic_religion = {
-	type = title
-	tier = kingdom
-	top_liege = no
-	priority = 47
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-emperor_theocracy_male_nedic_nordic_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-emperor_theocracy_female_nedic_nordic_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-empire_theocracy_nedic_nordic_religion = {
-	type = title
-	tier = empire
-	top_liege = no
-	priority = 102
-	governments = { theocracy_government }
-	religions = { nedic_nordic_religion }
-}
-
-
-#Yokudan Religion
-
-baron_theocracy_male_yokudan_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = barony
-	priority = 7
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { yokudan_religion }
-}
-baron_theocracy_female_yokudan_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = barony
-	priority = 7
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
 }
@@ -229,26 +90,15 @@ barony_theocracy_yokudan_religion = {
 	type = title
 	tier = barony
 	top_liege = no
-	priority = 7
-	governments = { theocracy_government }
+	priority = 10
+	holding = church_holding
 	religions = { yokudan_religion }
 }
-count_theocracy_male_yokudan_religion = {
+count_theocracy_yokudan_religion = {
 	type = character
-	gender = male
 	special = holder
 	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { yokudan_religion }
-}
-count_theocracy_female_yokudan_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 18
+	priority = 20
 	top_liege = no
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
@@ -257,26 +107,16 @@ county_theocracy_yokudan_religion = {
 	type = title
 	tier = county
 	top_liege = no
-	priority = 18
+	priority = 20
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
 }
-duke_theocracy_male_yokudan_religion = {
+duke_theocracy_yokudan_religion = {
 	type = character
-	gender = male
 	special = holder
 	tier = duchy
-	priority = 27
+	priority = 30
 	top_liege = no
-	governments = { theocracy_government }
-	religions = { yokudan_religion }
-}
-duke_theocracy_female_yokudan_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 27
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
 }
@@ -284,7 +124,7 @@ duchy_theocracy_yokudan_religion = {
 	type = title
 	tier = duchy
 	top_liege = no
-	priority = 27
+	priority = 30
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
 }
@@ -293,7 +133,7 @@ king_theocracy_male_yokudan_religion = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 50
 	top_liege = no
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
@@ -301,9 +141,9 @@ king_theocracy_male_yokudan_religion = {
 king_theocracy_female_yokudan_religion = {
 	type = character
 	gender = female
-	special = kingdom
-	tier = county
-	priority = 47
+	special = holder
+	tier = kingdom
+	priority = 50
 	top_liege = no
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
@@ -312,26 +152,15 @@ kingdom_theocracy_yokudan_religion = {
 	type = title
 	tier = kingdom
 	top_liege = no
-	priority = 47
+	priority = 50
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
 }
-emperor_theocracy_male_yokudan_religion = {
+emperor_theocracy_yokudan_religion = {
 	type = character
-	gender = male
 	special = holder
 	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { yokudan_religion }
-}
-emperor_theocracy_female_yokudan_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 102
+	priority = 105
 	top_liege = no
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
@@ -339,336 +168,220 @@ emperor_theocracy_female_yokudan_religion = {
 empire_theocracy_yokudan_religion = {
 	type = title
 	tier = empire
+	priority = 105
 	top_liege = no
-	priority = 102
 	governments = { theocracy_government }
 	religions = { yokudan_religion }
-}
-
-#Aldmer Religion
-
-baron_theocracy_male_aldmer_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = barony
-	priority = 7
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-baron_theocracy_female_aldmer_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = barony
-	priority = 7
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-barony_theocracy_aldmer_religion = {
-	type = title
-	tier = barony
-	top_liege = no
-	priority = 7
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-count_theocracy_male_aldmer_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-count_theocracy_female_aldmer_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-county_theocracy_aldmer_religion = {
-	type = title
-	tier = county
-	top_liege = no
-	priority = 18
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-duke_theocracy_male_aldmer_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 27
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-duke_theocracy_female_aldmer_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 27
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-duchy_theocracy_aldmer_religion = {
-	type = title
-	tier = duchy
-	top_liege = no
-	priority = 27
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-king_theocracy_male_aldmer_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-king_theocracy_female_aldmer_religion = {
-	type = character
-	gender = female
-	special = kingdom
-	tier = kingdom
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-kingdom_theocracy_aldmer_religion = {
-	type = title
-	tier = kingdom
-	top_liege = no
-	priority = 47
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-emperor_theocracy_male_aldmer_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-emperor_theocracy_female_aldmer_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-empire_theocracy_aldmer_religion = {
-	type = title
-	tier = empire
-	top_liege = no
-	priority = 102
-	governments = { theocracy_government }
-	religions = { aldmer_religion }
-}
-
-#Reach Religion
-
-baron_theocracy_male_reach_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = barony
-	priority = 7
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-baron_theocracy_female_reach_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = barony
-	priority = 7
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-barony_theocracy_reach_religion = {
-	type = title
-	tier = barony
-	top_liege = no
-	priority = 7
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-count_theocracy_male_reach_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-count_theocracy_female_reach_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 18
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-county_theocracy_reach_religion = {
-	type = title
-	tier = county
-	top_liege = no
-	priority = 18
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-duke_theocracy_male_reach_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 27
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-duke_theocracy_female_reach_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 27
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-duchy_theocracy_reach_religion = {
-	type = title
-	tier = duchy
-	top_liege = no
-	priority = 27
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-king_theocracy_male_reach_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-king_theocracy_female_reach_religion = {
-	type = character
-	gender = female
-	special = kingdom
-	tier = county
-	priority = 47
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-kingdom_theocracy_reach_religion = {
-	type = title
-	tier = kingdom
-	top_liege = no
-	priority = 47
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-emperor_theocracy_male_reach_religion = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-emperor_theocracy_female_reach_religion = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 102
-	top_liege = no
-	governments = { theocracy_government }
-	religions = { reach_religion }
-}
-empire_theocracy_reach_religion = {
-	type = title
-	tier = empire
-	top_liege = no
-	priority = 102
-	governments = { theocracy_government }
-	religions = { reach_religion }
 }
 
 ##############################################
-# Special culture-group titles (sorted by culture, then government special).
+# Theocracy titles, faith localization (for special cases).
 
-### Yokudan Group ###
+
+##############################################
+# Special cultural titles (sorted by culture groups, then cultures, then government special).
+
+#Special
+
+#Tribes (overrides "High Chiefdom")
+duchy_tribal_tribe = {
+	type = title
+	tier = duchy
+	top_liege = no
+	priority = 30
+	only_independent = yes
+	governments = { tribal_government }
+	cultures = { mountain_orc iron_orc wood_orc horsemen reachmen }
+}
+
+#Nordic Group
 
 #Feudal
+count_feudal_male_nordic_group = { #Thane
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+count_feudal_female_nordic_group = { #Thane
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+county_feudal_nordic_group = { #Thanedom
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+duke_feudal_male_nordic_group = { #Jarl
+	type = character
+	special = holder
+	gender = male
+	tier = duchy
+	priority = 28
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+duke_feudal_female_nordic_group = { #Jarl
+	type = character
+	special = holder
+	gender = female
+	tier = duchy
+	priority = 28
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+duchy_feudal_nordic_group = { #Jarldom
+	type = title
+	tier = duchy
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+	priority = 28
+}
+king_feudal_male_nordic_group = { #High Jarl
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+king_feudal_female_nordic_group = { #High Jarl
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+}
+kingdom_feudal_nordic_group = { #Hold
+	type = title
+	tier = kingdom
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+	priority = 47
+}
 
-# Barony
-barony_feudal_yokudan_group = {
-	type = title
-	tier = barony
-	priority = 7
-	governments = { feudal_government }
-	culture_groups = { yokudan_group }
-}
-baron_feudal_male_yokudan_group = {
+#Aldmeri Group
+
+#Feudal
+baron_feudal_male_aldmeris_group = { #Cerum
 	type = character
 	gender = male
 	special = holder
 	tier = barony
-	priority = 7
+	priority = 8
 	governments = { feudal_government }
-	culture_groups = { yokudan_group }
+	culture_groups = { aldmeris_group }
 }
-baron_feudal_female_yokudan_group = {
+baron_feudal_female_aldmeris_group = { #Ceruval
 	type = character
 	gender = female
 	special = holder
-	tier = baron
-	priority = 7
+	tier = barony
+	priority = 8
 	governments = { feudal_government }
-	culture_groups = { yokudan_group }
+	culture_groups = { aldmeris_group }
 }
-# County
-county_feudal_yokudan_group = {
+duke_feudal_male_aldmeris_group = { #Kinlord
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government }
+	culture_groups = { aldmeris_group }
+}
+duke_feudal_female_aldmeris_group = { #Kinlady
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	governments = { feudal_government }
+	culture_groups = { aldmeris_group }
+}
+duchy_feudal_aldmeris_group = { #Kinhold
 	type = title
+	tier = duchy
+	governments = { feudal_government }
+	culture_groups = { aldmeris_group }
+	priority = 28
+}
+king_feudal_male_aldmeris_group = { #High Kinlord
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government }
+	culture_groups = { aldmeris_group }
+}
+king_feudal_female_aldmeris_group = { #High Kinlady
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government }
+	culture_groups = { aldmeris_group }
+}
+
+#Republic
+baron_republic_aldmeris_group = { #Canonreeve
+	type = character
+	special = holder
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { republic_government }
+	culture_groups = { aldmeris_group }
+}
+count_republic_male_aldmeris_group = { #Lord Reeve
+	type = character
+	special = holder
+	gender = male
 	tier = county
 	priority = 18
-	governments = { feudal_government }
-	culture_groups = { yokudan_group }
+	top_liege = no
+	governments = { republic_government }
+	culture_groups = { aldmeris_group }
 }
-count_feudal_male_yokudan_group = {
+count_republic_female_aldmeris_group = { #Lady Reeve
+	type = character
+	special = holder
+	gender = female
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { republic_government }
+	culture_groups = { aldmeris_group }
+}
+duke_republic_aldmeris_group = { #High Reeve
+	type = character
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { republic_government }
+	culture_groups = { aldmeris_group }
+}
+
+#Yokudan Group
+
+#Feudal
+count_feudal_male_yokudan_group = { #Magnifico
 	type = character
 	gender = male
 	special = holder
@@ -677,7 +390,7 @@ count_feudal_male_yokudan_group = {
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-count_feudal_female_yokudan_group = {
+count_feudal_female_yokudan_group = { #Magnifica
 	type = character
 	gender = female
 	special = holder
@@ -686,24 +399,23 @@ count_feudal_female_yokudan_group = {
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-# Duchy
-duchy_feudal_yokudan_group = {
+county_feudal_yokudan_group = { #Magnificence
 	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	culture_groups = { yokudan_group }
+}
+duke_feudal_male_yokudan_group = { #Grandee
+	type = character
+	gender = male
+	special = holder
 	tier = duchy
 	priority = 28
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-duke_feudal_male_yokudan_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 28
-	governments = { feudal_government }
-	culture_groups = { yokudan_group }
-}
-duke_feudal_female_yokudan_group = {
+duke_feudal_female_yokudan_group = { #Grandeya
 	type = character
 	gender = female
 	special = holder
@@ -712,146 +424,97 @@ duke_feudal_female_yokudan_group = {
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-# Kingdom
-kingdom_feudal_yokudan_group = {
+duchy_feudal_yokudan_group = { #Grandeza
 	type = title
-	tier = kingdom
-	priority = 47
+	tier = duchy
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
+	priority = 28
 }
-king_feudal_male_yokudan_group = {
+king_feudal_male_yokudan_group = { #Sultan
 	type = character
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 48
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-king_feudal_female_yokudan_group = {
+king_feudal_female_yokudan_group = { #Sultana
 	type = character
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 48
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
-# Empire
-empire_feudal_yokudan_group = {
+kingdom_feudal_yokudan_group = { #Sultanate
 	type = title
-	tier = empire
-	priority = 102
-	governments = { feudal_government }
-	culture_groups = { yokudan_group }
-}
-emperor_feudal_male_yokudan_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 102
-	governments = { feudal_government }
-	culture_groups = { yokudan_group }
-}
-emperor_feudal_female_yokudan_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 102
+	tier = kingdom
+	priority = 48
 	governments = { feudal_government }
 	culture_groups = { yokudan_group }
 }
 
-# Republic
-baron_republic_male_yokudan_group = {
+#Republic
+baron_republic_yokudan_group = { #Magistrate
 	type = character
-	gender = male
 	special = holder
 	tier = barony
-	priority = 7
+	priority = 8
+	top_liege = no
 	governments = { republic_government }
 	culture_groups = { yokudan_group }
 }
-baron_republic_female_yokudan_group = {
+count_republic_male_yokudan_group = { #Lord Magistrate
 	type = character
-	gender = female
 	special = holder
-	tier = barony
-	priority = 7
-	governments = { republic_government }
-	culture_groups = { yokudan_group }
-}
-# County
-count_republic_male_yokudan_group = {
-	type = character
 	gender = male
-	special = holder
 	tier = county
 	priority = 18
+	top_liege = no
 	governments = { republic_government }
 	culture_groups = { yokudan_group }
 }
-count_republic_female_yokudan_group = {
+count_republic_female_yokudan_group = { #Lady Magistrate
 	type = character
-	gender = female
 	special = holder
+	gender = female
 	tier = county
 	priority = 18
+	top_liege = no
 	governments = { republic_government }
 	culture_groups = { yokudan_group }
 }
-
-#############################################
- # Culture-specific titles
 
 #Yokudan
-county_theocracy_yokudan_religion_yokudan = {
+
+#Feudal
+emperor_feudal_male_yokudan = { #Elden Yokeda
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 103
+	governments = { feudal_government }
+	cultures = { yokudan horsemen }
+}
+emperor_feudal_female_yokudan = {  #Elden Yokeda
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 103
+	governments = { feudal_government }
+	cultures = { yokudan horsemen }
+}
+empire_feudal_yokudan = {  #High Sultanate
 	type = title
-	tier = county
-	top_liege = no
-	priority = 20
-	governments = { theocracy_government }
-	religions = { yokudan_religion }
-	cultures = { yokudan }
-}
-baron_feudal_male_yokudan = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 49
+	tier = empire
+	priority = 103
 	governments = { feudal_government }
-	cultures = { yokudan }
-}
-baron_feudal_female_yokudan = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 49
-	governments = { feudal_government }
-	cultures = { yokudan }
-}
-king_feudal_male_yokudan = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 49
-	governments = { feudal_government }
-	cultures = { yokudan }
-}
-king_feudal_female_yokudan = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 49
-	governments = { feudal_government }
-	cultures = { yokudan }
+	cultures = { yokudan horsemen }
 }
 
  #############################################
@@ -867,7 +530,6 @@ king_feudal_female_yokudan = {
  #Default Holy Order tiers
  #Default Viceroyalty tiers
 
-
  #Default Feudal tiers
 baron_feudal_male = {
 	type = character
@@ -876,6 +538,7 @@ baron_feudal_male = {
 	tier = barony
 	priority = 5
 	governments = { feudal_government }
+	top_liege = no
 }
 baron_feudal_female = {
 	type = character
@@ -884,12 +547,14 @@ baron_feudal_female = {
 	tier = barony
 	priority = 5
 	governments = { feudal_government }
+	top_liege = no
 }
 barony_feudal = {
 	type = title
 	tier = barony
 	priority = 5
 	governments = { feudal_government }
+	top_liege = no
 }
 count_feudal_male = {
 	type = character
@@ -898,6 +563,7 @@ count_feudal_male = {
 	tier = county
 	priority = 16
 	governments = { feudal_government }
+	top_liege = no
 }
 count_feudal_female = {
 	type = character
@@ -906,13 +572,46 @@ count_feudal_female = {
 	tier = county
 	priority = 16
 	governments = { feudal_government }
+	top_liege = no
 }
 county_feudal = {
 	type = title
 	tier = county
 	priority = 16
 	governments = { feudal_government }
+	top_liege = no
 }
+count_feudal_independent_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	only_independent = yes
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	top_liege = no
+}
+count_feudal_independent_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	only_independent = yes
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	top_liege = no
+}
+county_feudal_independent = {
+	type = title
+	tier = county
+	priority = 19
+	only_independent = yes
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	top_liege = no
+}	
 duke_feudal_male = {
 	type = character
 	gender = male
@@ -920,6 +619,7 @@ duke_feudal_male = {
 	tier = duchy
 	priority = 26
 	governments = { feudal_government }
+	top_liege = no
 }
 duke_feudal_female = {
 	type = character
@@ -928,12 +628,45 @@ duke_feudal_female = {
 	tier = duchy
 	priority = 26
 	governments = { feudal_government }
+	top_liege = no
 }
 duchy_feudal = {
 	type = title
 	tier = duchy
 	governments = { feudal_government }
 	priority = 27
+	top_liege = no
+}
+duke_feudal_independent_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	only_independent = yes
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	top_liege = no
+}
+duke_feudal_independent_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	only_independent = yes
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	top_liege = no
+}
+duchy_feudal_independent = {
+	type = title
+	tier = duchy
+	governments = { feudal_government }
+	culture_groups = { breton_group }
+	only_independent = yes
+	priority = 28
+	top_liege = no
 }
 king_feudal_male = {
 	type = character
@@ -942,6 +675,7 @@ king_feudal_male = {
 	tier = kingdom
 	priority = 46
 	governments = { feudal_government }
+	top_liege = no
 }
 king_feudal_female = {
 	type = character
@@ -950,34 +684,70 @@ king_feudal_female = {
 	tier = kingdom
 	priority = 46
 	governments = { feudal_government }
+	top_liege = no
 }
 kingdom_feudal = {
 	type = title
 	tier = kingdom
 	priority = 46
 	governments = { feudal_government }
+	top_liege = no
 }
-emperor_feudal_male = {
+king_feudal_independent_male = { #King
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+	only_independent = yes
+	top_liege = no
+}
+king_feudal_independent_female = { #Queen
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+	only_independent = yes
+	top_liege = no
+}
+kingdom_feudal_independent = { #Kingdom
+	type = title
+	tier = kingdom
+	priority = 48
+	governments = { feudal_government }
+	culture_groups = { nordic_group }
+	only_independent = yes
+	top_liege = no
+}
+emperor_feudal_male = { #High King
 	type = character
 	gender = male
 	special = holder
 	tier = empire
 	priority = 101
 	governments = { feudal_government }
+	top_liege = no
 }
-emperor_feudal_female = {
+emperor_feudal_female = { #High Queen
 	type = character
 	gender = female
 	special = holder
 	tier = empire
 	priority = 101
 	governments = { feudal_government }
+	top_liege = no
 }
-empire_feudal = {
+empire_feudal = { #High Kingdom
 	type = title
 	tier = empire
 	priority = 101
 	governments = { feudal_government }
+	top_liege = no
 }
 
  #Default Republic tiers
@@ -1129,7 +899,7 @@ barony_theocracy = {
 	tier = barony
 	top_liege = no
 	priority = 6
-	governments = { theocracy_government }
+	holding = church_holding
 }
 count_theocracy_male = {
 	type = character
