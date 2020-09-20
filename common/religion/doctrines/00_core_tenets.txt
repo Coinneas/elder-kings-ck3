@@ -480,7 +480,7 @@ doctrine_core_tenets = {
 		}
 		
 		parameters = {
-			# TODO: Actually make that have an effect
+			# TODO: Give Impure traits to foreign close relationships
 			children_bad_congenital_trait_impure = yes
 			character_impure_foreign_relationships_impure = yes
 			pilgrimage_decision_active = yes
@@ -522,6 +522,8 @@ doctrine_core_tenets = {
 		}
 		
 		parameters = {
+			# TODO: Decision for Witches to become Occultists
+			# Handle Briarhearts somehow?
 			potent_witch_become_occultist = yes
 		}
 		
