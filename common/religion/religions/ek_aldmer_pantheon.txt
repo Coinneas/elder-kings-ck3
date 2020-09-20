@@ -224,8 +224,8 @@
 			icon = auriel
 			
 			#Doctrines
+			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_bastardry_legitimization
-			doctrine = doctrine_bastardry_all
 
 			#Tenets
 			doctrine = tenet_communion
