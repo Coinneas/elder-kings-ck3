@@ -85,7 +85,7 @@
 			
 		}
 		female_names = {
-			Morag Suhlak Dassi Desha Hamu Kedis Lunutli Maeonius Sarase Sienna
+			Morag Suhlak Dassi Desha Hamu Kedis Lunutli Maeonius Perrif Sarase Sienna
 		}
 		
 		dynasty_of_location_prefix = "dynnp_of"
