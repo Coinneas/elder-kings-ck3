@@ -1,0 +1,321 @@
+﻿namespace = ek_tenets
+
+### Fired by on_birth on action: Gives the Impure trait if the child has any bad congenital trait
+# Gives the trait to the child, if applicable
+ek_tenets.0001 = {
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		# Must have the Divine Purity tenet
+		faith = {
+			has_doctrine = tenet_divine_purity
+		}
+		
+		OR = {
+			# Has their body tainted
+			OR = {
+				has_trait = physique_bad
+				has_trait = intellect_bad
+				has_trait = physique_bad
+				
+				has_trait = clubfooted
+				has_trait = hunchbacked
+				has_trait = lisping
+				has_trait = stuttering
+				has_trait = dwarf
+				has_trait = giant
+				has_trait = inbred
+				
+				has_trait = spindly
+				has_trait = scaly
+				has_trait = albino
+				has_trait = wheezing
+				has_trait = bleeder
+				has_trait = infertile
+			}
+			# Either parent is Impure / from a different faith
+			AND = {
+				exists = mother
+				mother = {
+					OR = {
+						NOT = { faith = root.faith }
+						has_trait = impure
+					}
+				}
+			}
+			AND = {
+				exists = father
+				father = {
+					OR = {
+						NOT = { faith = root.faith }
+						has_trait = impure
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		# Give the trait
+		add_trait = impure
+		save_scope_as = impure_character
+		
+		# Notifies the parents
+		if = {
+			limit = { exists = mother }
+			mother = { trigger_event = ek_tenets.0002 }
+		}
+		
+		if = {
+			limit = { exists = father }
+			father = { trigger_event = ek_tenets.0002 }
+		}
+	}
+}
+
+ek_tenets.0002 = {
+	type = character_event
+	
+	title = {
+		first_valid = {
+			# Parents are impure + bad congenital traits
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							has_trait = physique_bad
+							has_trait = intellect_bad
+							has_trait = physique_bad
+							
+							has_trait = clubfooted
+							has_trait = hunchbacked
+							has_trait = lisping
+							has_trait = stuttering
+							has_trait = dwarf
+							has_trait = giant
+							has_trait = inbred
+							
+							has_trait = spindly
+							has_trait = scaly
+							has_trait = albino
+							has_trait = wheezing
+							has_trait = bleeder
+							has_trait = infertile
+						}
+						
+						OR = {
+							AND = {
+								exists = mother
+								mother = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+							AND = {
+								exists = father
+								father = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.titleBoth
+			}
+			
+			# Parents are impure
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							AND = {
+								exists = mother
+								mother = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+							AND = {
+								exists = father
+								father = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.titleImpPa
+			}			
+			
+			# Bad congenital traits
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							has_trait = physique_bad
+							has_trait = intellect_bad
+							has_trait = physique_bad
+							
+							has_trait = clubfooted
+							has_trait = hunchbacked
+							has_trait = lisping
+							has_trait = stuttering
+							has_trait = dwarf
+							has_trait = giant
+							has_trait = inbred
+							
+							has_trait = spindly
+							has_trait = scaly
+							has_trait = albino
+							has_trait = wheezing
+							has_trait = bleeder
+							has_trait = infertile
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.titleDef
+			}
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			# Parents are impure + bad congenital traits
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							has_trait = physique_bad
+							has_trait = intellect_bad
+							has_trait = physique_bad
+							
+							has_trait = clubfooted
+							has_trait = hunchbacked
+							has_trait = lisping
+							has_trait = stuttering
+							has_trait = dwarf
+							has_trait = giant
+							has_trait = inbred
+							
+							has_trait = spindly
+							has_trait = scaly
+							has_trait = albino
+							has_trait = wheezing
+							has_trait = bleeder
+							has_trait = infertile
+						}
+						
+						OR = {
+							AND = {
+								exists = mother
+								mother = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+							AND = {
+								exists = father
+								father = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.descBoth
+			}
+			
+			# Parents are impure
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							AND = {
+								exists = mother
+								mother = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+							AND = {
+								exists = father
+								father = {
+									OR = {
+										NOT = { faith = root.faith }
+										has_trait = impure
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.descImpPa
+			}			
+			
+			# Bad congenital traits
+			triggered_desc = {
+				trigger = {
+					scope:impure_character = {
+						OR = {
+							has_trait = physique_bad
+							has_trait = intellect_bad
+							has_trait = physique_bad
+							
+							has_trait = clubfooted
+							has_trait = hunchbacked
+							has_trait = lisping
+							has_trait = stuttering
+							has_trait = dwarf
+							has_trait = giant
+							has_trait = inbred
+							
+							has_trait = spindly
+							has_trait = scaly
+							has_trait = albino
+							has_trait = wheezing
+							has_trait = bleeder
+							has_trait = infertile
+						}
+					}
+				}
+				
+				desc = ek_tenets.0002.descDef
+			}
+		}
+	}
+	
+	theme = dynasty
+	
+	left_portrait = {
+		character = scope:impure_character
+	}
+	
+	option = {
+		name = ek_tenets.0002.optA
+		
+		custom_tooltip = character_is_declared_impure
+	}
+}

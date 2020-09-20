@@ -285,6 +285,254 @@ doctrine_core_tenets = {
 			mountains_attrition_mult = -0.25
 		}
 	}
+	
+	tenet_silver_tongued = {
+		icon = core_tenet_followers
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_silver_tongue }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			always = yes
+		}
+		
+		parameters = {
+			# TODO: Actually make that have an effect
+			children_education_diplomacy = yes
+		}
+		
+		traits = {
+			virtues = {
+				education_diplomacy_3
+				education_diplomacy_4
+			}
+		}
+
+		character_modifier = {
+			monthly_diplomacy_lifestyle_xp_gain_mult = 0.2
+		}
+	}
+	
+	tenet_war_worship = {
+		icon = core_tenet_sword
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_war_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			always = yes
+		}
+		
+		parameters = {
+			# TODO: Actually make that have an effect
+			children_education_martial = yes
+		}
+		
+		traits = {
+			virtues = {
+				education_martial_3
+				education_martial_4
+			}
+		}
+
+		character_modifier = {
+			monthly_martial_lifestyle_xp_gain_mult = 0.2
+		}
+	}
+	
+	tenet_merchant_faith = {
+		icon = core_tenet_handcoin
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_merchant_faith }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			always = yes
+		}
+		
+		parameters = {
+			# TODO: Actually make that have an effect
+			children_education_stewardship = yes
+		}
+		
+		traits = {
+			virtues = {
+				education_stewardship_3
+				education_stewardship_4
+			}
+		}
+
+		character_modifier = {
+			monthly_stewardship_lifestyle_xp_gain_mult = 0.2
+		}
+	}
+	
+	tenet_shadow_worship = {
+		icon = core_tenet_shadyfigure
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_shadow_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			always = yes
+		}
+		
+		parameters = {
+			# TODO: Actually make that have an effect
+			children_education_intrigue = yes
+		}
+		
+		traits = {
+			virtues = {
+				education_intrigue_3
+				education_intrigue_4
+			}
+		}
+
+		character_modifier = {
+			monthly_intrigue_lifestyle_xp_gain_mult = 0.2
+		}
+	}
+	
+	tenet_veneration_of_knowledge = {
+		icon = core_tenet_bigbook
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_veneration_of_knowledge }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			always = yes
+		}
+		
+		parameters = {
+			# TODO: Actually make that have an effect
+			children_education_learning = yes
+		}
+		
+		traits = {
+			virtues = {
+				education_learning_3
+				education_learning_4
+			}
+		}
+
+		character_modifier = {
+			monthly_learning_lifestyle_xp_gain_mult = 0.2
+		}
+	}
+	
+	tenet_divine_purity = {
+		icon = core_tenet_bigbook
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_divine_purity }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		can_pick = {
+			custom_description = {
+				text = doctrine_inverted_pluralism_fundamentalist_trigger
+				NOT = {	flag:doctrine_pluralism_righteous = { is_in_list = selected_doctrines } }
+				NOT = {	flag:doctrine_pluralism_pluralistic = { is_in_list = selected_doctrines } }
+			}
+		}
+		
+		traits = {
+			virtues = {
+				intellect_good_3
+				physique_good_3
+				beauty_good_3
+			}
+		}
+		
+		parameters = {
+			# TODO: Give Impure traits to foreign close relationships
+			children_bad_congenital_trait_impure = yes
+			character_impure_foreign_relationships_impure = yes
+			pilgrimage_decision_active = yes
+		}
+	}
+	
+	tenet_witch_worship = {
+		icon = core_tenet_festivities
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = reach_religion
+					}
+					desc = tenet_witch_worship_alternate_name
+				}
+				desc = tenet_witch_worship_name
+			}
+		}
+		
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_witch_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		
+		can_pick = {
+			custom_description = {
+				text = WITCHCRAFT_MUST_BE_FULLY_ACCEPTED
+				NOR = {
+					flag:doctrine_witchcraft_crime = { is_in_list = selected_doctrines }
+					flag:doctrine_witchcraft_shunned = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+		
+		parameters = {
+			# TODO: Decision for Witches to become Occultists
+			# Handle Briarhearts somehow?
+			potent_witch_become_occultist = yes
+		}
+		
+		traits = {
+			virtues = {
+				witch
+			}
+		}
+	}
 
 	############################
 	# Christian Faith Tenets	#
@@ -332,33 +580,33 @@ doctrine_core_tenets = {
 		}
 	}
 
-	tenet_alexandrian_catechism = {
-		icon = core_tenet_bigbook
-		piety_cost = {
-			value = faith_tenet_cost_mid
+	# tenet_alexandrian_catechism = {
+		# icon = core_tenet_bigbook
+		# piety_cost = {
+			# value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_alexandrian_catechism }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
+			# if = {
+				# limit = { has_doctrine = tenet_alexandrian_catechism }
+				# multiply = faith_unchanged_doctrine_cost_mult
+			# }
+		# }
 
-		is_shown = {
+		# is_shown = {
 			# religion_tag = christianity_religion
-		}
+		# }
 
-		can_pick = {
-			custom_description = {
-				text = doctrine_pluralism_fundamentalist_trigger
-				NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
-			}
-		}
+		# can_pick = {
+			# custom_description = {
+				# text = doctrine_pluralism_fundamentalist_trigger
+				# NOT = { flag:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
+			# }
+		# }
 
-		character_modifier = {
-			monthly_learning_lifestyle_xp_gain_mult = 0.2
-		}
-	}
+		# character_modifier = {
+			# monthly_learning_lifestyle_xp_gain_mult = 0.2
+		# }
+	# }
 
 	tenet_armed_pilgrimages = {
 		icon = core_tenet_sword
@@ -2563,9 +2811,10 @@ doctrine_core_tenets = {
 			custom_description = {
 				text = incompatible_with_crimes_trigger
 				NOR = {
+					# flag:doctrine_adultery_crime = { is_in_list = selected_doctrines }
+					flag:doctrine_adultery_men_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_adultery_women_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_homosexuality_crime = { is_in_list = selected_doctrines }
-					flag:doctrine_adultery_men_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_witchcraft_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_deviancy_crime = { is_in_list = selected_doctrines }
 				}
@@ -2808,10 +3057,12 @@ doctrine_core_tenets = {
 			custom_description = {
 				text = ADULTERY_MUST_BE_FULLY_ACCEPTED
 				NOR = {
-					flag:doctrine_adultery_women_crime = { is_in_list = selected_doctrines }
-					flag:doctrine_adultery_women_shunned = { is_in_list = selected_doctrines }
+					# flag:doctrine_adultery_crime = { is_in_list = selected_doctrines }
+					# flag:doctrine_adultery_shunned = { is_in_list = selected_doctrines }
 					flag:doctrine_adultery_men_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_adultery_men_shunned = { is_in_list = selected_doctrines }
+					flag:doctrine_adultery_women_crime = { is_in_list = selected_doctrines }
+					flag:doctrine_adultery_women_shunned = { is_in_list = selected_doctrines }
 				}
 			}
 		}
