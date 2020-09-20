@@ -27,7 +27,10 @@
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
 	
 	### EK Doctrines
-	doctrine = doctrine_adultery_shunned
+	# doctrine = doctrine_adultery_shunned
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_homosexuality_accepted
 	doctrine = doctrine_daedra_worship_forbidden
 	doctrine = doctrine_lycanthropy_outlawed
 	doctrine = doctrine_vampirism_outlawed

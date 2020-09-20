@@ -1,0 +1,7 @@
+﻿######################
+# Required Doctrines #
+######################
+
+witchcraft_must_be_fully_accepted = {
+	global_not = WITCHCRAFT_MUST_BE_FULLY_ACCEPTED
+}

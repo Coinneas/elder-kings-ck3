@@ -28,7 +28,10 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	
 	### EK Doctrines
-	doctrine = doctrine_adultery_shunned
+	# doctrine = doctrine_adultery_shunned
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_homosexuality_accepted
 	doctrine = doctrine_daedra_worship_accepted
 	doctrine = doctrine_lycanthropy_accepted
 	doctrine = doctrine_vampirism_accepted
@@ -246,7 +249,7 @@
 			#Tenets
 			doctrine = tenet_warmonger
 			doctrine = tenet_human_sacrifice
-			doctrine = tenet_ancestor_worship
+			doctrine = tenet_witch_worship
 		}
 		
 		minotaur_cult = {

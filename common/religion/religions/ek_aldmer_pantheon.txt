@@ -12,7 +12,7 @@
 	#Marriage
 	doctrine = doctrine_monogamy
 	doctrine = doctrine_divorce_approval
-	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_bastardry_all
 	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 
 	#Crimes
@@ -27,7 +27,10 @@
 	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
 	
 	### EK Doctrines
-	doctrine = doctrine_adultery_shunned
+	# doctrine = doctrine_adultery_shunned
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_homosexuality_accepted
 	doctrine = doctrine_daedra_worship_forbidden
 	doctrine = doctrine_lycanthropy_outlawed
 	doctrine = doctrine_vampirism_outlawed
@@ -213,6 +216,20 @@
 			#Tenets
 			doctrine = tenet_communion
 			doctrine = tenet_divine_purity
+			doctrine = tenet_ancestor_worship
+		}
+		
+		mainland_auriel = {
+			color = { 0.9 1.0 0.7 }
+			icon = auriel
+			
+			#Doctrines
+			doctrine = doctrine_bastardry_legitimization
+			doctrine = doctrine_bastardry_all
+
+			#Tenets
+			doctrine = tenet_communion
+			doctrine = tenet_adaptive
 			doctrine = tenet_ancestor_worship
 		}
 	}

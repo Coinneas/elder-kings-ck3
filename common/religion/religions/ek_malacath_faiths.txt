@@ -28,7 +28,10 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	
 	### EK Doctrines
-	doctrine = doctrine_adultery_accepted
+	# doctrine = doctrine_adultery_accepted
+	doctrine = doctrine_adultery_men_accepted
+	doctrine = doctrine_adultery_women_accepted
+	doctrine = doctrine_homosexuality_accepted
 	doctrine = doctrine_daedra_worship_accepted
 	doctrine = doctrine_lycanthropy_accepted
 	doctrine = doctrine_vampirism_accepted
