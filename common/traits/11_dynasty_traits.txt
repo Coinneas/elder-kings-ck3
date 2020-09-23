@@ -329,7 +329,7 @@ denounced = {
 }
 
 impure = {
-	index = 361
+	index = 362
 	
 	same_faith_opinion = -10
 	diplomacy = -1

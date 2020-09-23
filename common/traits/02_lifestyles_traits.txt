@@ -613,7 +613,6 @@ blademaster_2 = {
 			desc = trait_blademaster_2_character_desc
 		}
 	}
-	
 
 	compatibility = {
 		blademaster_1 = @pos_compat_medium
@@ -715,7 +714,6 @@ hunter_2 = {
 		lazy = @neg_compat_low
 	}
 }
-
 hunter_3 = {
 	index = 84
 	lifestyle = yes

@@ -190,7 +190,7 @@ education_diplomacy_4 = {
 }
 
 ### STEWARDSHIP OUTCOMES
-education_stewardship_1 = { #Indulgent wastrel
+education_stewardship_1 = {
 	index = 9
 	minimum_age = 16
 	stewardship = 2
@@ -212,7 +212,7 @@ education_stewardship_1 = { #Indulgent wastrel
 	group = education_stewardship
 	level = 1
 }
-education_stewardship_2 = { #Thrifty clerk
+education_stewardship_2 = {
 	index = 10
 	minimum_age = 16
 	stewardship = 4
@@ -234,7 +234,7 @@ education_stewardship_2 = { #Thrifty clerk
 	group = education_stewardship
 	level = 2
 }
-education_stewardship_3 = {	#Fortune builder
+education_stewardship_3 = {
 	index = 11
 	minimum_age = 16
 	stewardship = 6
@@ -304,7 +304,7 @@ education_martial_1 = {
 	
 	add_commander_trait = yes
 }
-education_martial_2 = { #Tough soldier
+education_martial_2 = {
 	index = 14
 	minimum_age = 16
 	martial = 4
@@ -327,7 +327,7 @@ education_martial_2 = { #Tough soldier
 	level = 2
 	add_commander_trait = yes
 }
-education_martial_3 = { #Skilled tactician
+education_martial_3 = {
 	index = 15
 	minimum_age = 16
 	martial = 6
@@ -350,7 +350,7 @@ education_martial_3 = { #Skilled tactician
 	level = 3
 	add_commander_trait = yes
 }
-education_martial_4 = { #Brilliant strategist
+education_martial_4 = {
 	index = 16
 	minimum_age = 16
 	martial = 8
