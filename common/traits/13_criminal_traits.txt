@@ -167,7 +167,6 @@ deviant = {
 
 	stress_loss_mult = 0.25
 	same_opinion = 35
-
 	
 	desc = {
 		first_valid = {
@@ -401,8 +400,8 @@ witch = {
 	diplomacy = -1
 	intrigue = 1
 	learning = 1
-	
-	group = witchcraft
+	group = witch
+	level = 1
 
 	same_opinion = 20
 	
