@@ -33,8 +33,8 @@
     breton_cult_adherent_plural:0 "Bretonnites"
     breton_cult_desc:0 "Centuries of coexistence with the Altmer have integrated parts of Elven worship into the Breton culture. Phynaster, the Hero-God, and Magnus, the God of Magic, are worshipped alongside the Eight Divines."
  
- redguard_cult:1 "Redguard Creed"
-    redguard_cult_adj:1 "Redguard Creed"
+ redguard_cult:1 "Redguard Cult"
+    redguard_cult_adj:1 "Redguard Cult"
     redguard_cult_adherent:1 "Redguard Cultist"
     redguard_cult_adherent_plural:1 "Redguard Cultists"
     redguard_cult_desc:1 "While more traditionalist Crowns worship the ancient gods brought over from Yokuda, the faith of the Forebears is highly Imperialized. Their pantheon is substantially the same as that of the Imperials and Bretons, with the notable inclusions of Morwha, Tava, Tu'whacca, and Zeht."
