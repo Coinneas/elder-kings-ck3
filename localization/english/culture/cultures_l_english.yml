@@ -54,6 +54,10 @@
     westmarcher_collective_noun:1 "Westmarchers"
  cyro_nord:0 "Cyro-Nord"
     cyro_nord_collective_noun:1 "Cyro-Nords"
+ skaal:0 "Skaal"
+    skaal_collective_noun:1 "Skaal"
+ atmoran:0 "Atmoran"
+    atmoran_collective_noun:1 "Atmoran"
  #ORSIMER
  orsimer_group:0 "Orsimer"
     orsimer_group_collective_noun:1 "Orsimeri"
