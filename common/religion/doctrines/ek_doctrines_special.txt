@@ -75,7 +75,7 @@ is_malacath_faith = {
 
 	special_doctrine_is_malacath_faith = {
 		parameters = {
-			# Since doctrines cannot modify other faith's views of us, only our view of others, all Celestial faiths are given this special doctrine which makes them friendlier to Faiths with the Celestial Syncretism tenet.
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Malacath faiths are given this special doctrine which makes them friendlier to Faiths with the Malacath Syncretism tenet.
 			hostility_override_tenet_malacath_syncretism = 1
 			malacath_syncretic_recipient_opinion_active = yes
 			opinion_of_malacath_syncretic_actor_opinion_active = 15
@@ -92,10 +92,27 @@ is_reach_faith = {
 
 	special_doctrine_is_reach_faith = {
 		parameters = {
-			# Since doctrines cannot modify other faith's views of us, only our view of others, all Celestial faiths are given this special doctrine which makes them friendlier to Faiths with the Celestial Syncretism tenet.
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Reach faiths are given this special doctrine which makes them friendlier to Faiths with the Reach Syncretism tenet.
 			hostility_override_tenet_reach_syncretism = 1
 			reach_syncretic_recipient_opinion_active = yes
 			opinion_of_reach_syncretic_actor_opinion_active = 15
+		}
+	}
+}
+
+is_atmoran_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_atmoran_faith
+	}
+
+	special_doctrine_is_atmoran_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Atmoran faiths are given this special doctrine which makes them friendlier to Faiths with the Atmoran Syncretism tenet.
+			hostility_override_tenet_atmoran_syncretism = 1
+			atmoran_syncretic_recipient_opinion_active = yes
+			opinion_of_atmoran_syncretic_actor_opinion_active = 15
 		}
 	}
 }
