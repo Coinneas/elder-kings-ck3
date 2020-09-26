@@ -3,8 +3,9 @@
  ### Religions
  ## Aedric
  # Nede-Nord
+ aetherius_name:0 "Aetherius"
  
- nedic_nordic_pantheon_name: "Nedic-Nordic Pantheon"
+ nedic_nordic_pantheon_name:0 "Nedic-Nordic Pantheon"
  god_the_divines_name:0 "The Divines"
     god_the_divines_name_possessive:0 "The Divines'"
  #Imperial/generic
@@ -30,6 +31,12 @@
     god_talos_name_possessive:0 "Talos's"
  god_shezarr_name:0 "Shezarr"
     god_shezarr_name_possessive:0 "Shezarr's"
+ god_moons_name:0 "the Moons"
+    god_moons_name_possessive:0 "the Moons'"
+ god_masser_name:0 "Masser"
+    god_masser_name_possessive:0 "Masser's"
+ god_secunda_name:0 "Secunda"
+    god_secunda_name:0 "Secunda's"
 
  #Breton
  god_druagaa_name:0 "Druagaa"
@@ -44,6 +51,7 @@
     god_sai_name_possessive:0 "Sai's"
  
  #Nord
+ sovngarde_name:0 "Sovngarde"
  god_jhunal_name:0 "Jhunal"
     god_jhunal_name_possessive:0 "Jhunal's"
  god_kyne_name:0 "Kyne"
@@ -87,7 +95,9 @@
     god_lorkhan_name_possessive:0 "Lorkhan's"
  
  # Yokudan
- yokudan_pantheon+name: "Yokudan Pantheon"
+ far_shores_name:0 "the Far Shores"
+ 
+ yokudan_pantheon_name:0 "Yokudan Pantheon"
  god_satakal_name:0 "Satakal"
     god_satakal_name:0 "Satakal's"
  god_diagna_name:0 "Diagna"
@@ -121,7 +131,10 @@
     god_herdmother_name_possessive:0 "Herd Mother's"
  
  ## Daedric
+ oblivion_name:0 "Oblivion"
  daedric_pantheon_name:0 "Daedric Princes"
+ god_daedric_princes_name:0 "the Daedric Princes"
+ god_daedric_princes_name_possessive:0 "the Daedric Princes'"
  
  # Azura
  god_azura_name:0 "Azura"
@@ -158,6 +171,7 @@
     god_jyggalag_name_possessive:0 "Jyggalag's"
 
  # Malacath
+ ashpit_name:0 "Ashpit"
  god_malacath_name:0 "Malacath"
     god_malacath_name_possessive:0 "Malacath's"
  god_mauloch_name:0 "Mauloch"
