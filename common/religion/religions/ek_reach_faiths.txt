@@ -233,7 +233,7 @@
 
 			#Tenets
 			doctrine = tenet_literalism
-			doctrine = tenet_aldmeri_syncretism #wip - replace with some dwemer adjacent tenet
+			doctrine = tenet_veneration_of_knowledge # I'll try spinning, that's a good trick
 			doctrine = tenet_ancestor_worship
 		}
 		

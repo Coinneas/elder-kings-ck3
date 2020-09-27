@@ -216,6 +216,7 @@
     doctrine_vampirism_accepted_desc:0 "Vampirism must not be seen as a curse, for it blesses us with untold strenghts and abilities."
  
  ### Tenets
+ ## Syncretism
  tenet_nedic_nordic_syncretism_name:0 "Nedic-Nordic Syncretism"
     tenet_nedic_nordic_syncretism_desc:0 "While the Gods of the Nedic-Nordic people are not ours, there is wisdom in their teaching and beliefs."
     doctrine_parameter_hostility_override_special_doctrine_is_nedic_nordic_faith:0 "Considers Nedic-Nordic [faiths|E] and is considered by Nedic-Nordic $game_concept_faiths$ to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of #V Hostile#!"
@@ -223,6 +224,8 @@
     doctrine_parameter_opinion_of_nedic_nordic_syncretic_recipient_opinion_active:0 ""
     doctrine_parameter_nedic_nordic_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_nedic_nordic_syncretism_name$ [core_tenet|E]"
     doctrine_parameter_opinion_of_nedic_nordic_syncretic_actor_opinion_active:0 ""
+    nedic_nordic_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    nedic_nordic_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
  
  tenet_aldmeri_syncretism_name:0 "Aldmeri Syncretism"
     tenet_aldmeri_syncretism_desc:0 "There is wisdom in the Aldmeri worship of the Ancestors. While they do not share our beliefs, maybe there is some truth to their myths."
@@ -231,6 +234,8 @@
     doctrine_parameter_opinion_of_aldmeri_syncretic_recipient_opinion_active:0 ""
     doctrine_parameter_aldmeri_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_aldmeri_syncretism_name$ [core_tenet|E]"
     doctrine_parameter_opinion_of_aldmeri_syncretic_actor_opinion_active:0 ""
+    aldmeri_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    aldmeri_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
  
  tenet_yokudan_syncretism_name:0 "Yoku Syncretism"
     tenet_yokudan_syncretism_desc:0 "Though we may not wholly share the beliefs of the old Yokudans, there is perhaps some truth to the myths of the Alik'r."
@@ -239,6 +244,8 @@
     doctrine_parameter_opinion_of_yokudan_syncretic_recipient_opinion_active:0 ""
     doctrine_parameter_yokudan_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_yokudan_syncretism_name$ [core_tenet|E]"
     doctrine_parameter_opinion_of_yokudan_syncretic_actor_opinion_active:0 ""
+    yokudan_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    yokudan_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
  
  tenet_celestial_syncretism_name:0 "Celestial Syncretism"
     tenet_celestial_syncretism_desc:0 "Though we may not wholly devote ourselves to the Magna-Ge, it is undoubtable that they are worthy of veneration."
@@ -247,7 +254,42 @@
     doctrine_parameter_opinion_of_celestial_syncretic_recipient_opinion_active:0 ""
     doctrine_parameter_celestial_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_celestial_syncretism_name$ [core_tenet|E]"
     doctrine_parameter_opinion_of_celestial_syncretic_actor_opinion_active:0 ""
+    celestial_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    celestial_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    
+ tenet_atmoran_syncretism_name:0 "Atmoran Syncretism"
+    tenet_atmoran_syncretism_desc:0 "The ancient Nords called Atmora 'the Land of Truth', and brought their old animalistic deities with them to Tamriel. These old traditions and forgotten memories should be reinvigorated, and brought to light in our own customs."
+    doctrine_parameter_hostility_override_special_doctrine_is_atmoran_faith:0 "Considers Atmoran [faiths|E] and is considered by Atmoran $game_concept_faiths$ to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of #V Hostile#!"
+    doctrine_parameter_atmoran_syncretic_actor_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with Atmoran [faiths|E]"
+    doctrine_parameter_opinion_of_atmoran_syncretic_recipient_opinion_active:0 ""
+    doctrine_parameter_atmoran_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_atmoran_syncretism_name$ [core_tenet|E]"
+    doctrine_parameter_opinion_of_atmoran_syncretic_actor_opinion_active:0 ""
+    atmoran_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    atmoran_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    
+ tenet_reach_syncretism_name:0 "Reach Syncretism"
+    tenet_reach_syncretism_desc:0 "The various Gods worshipped by the people in the Reach may seem terrifying and obscure, but if we learn about them with an open mind they can bring ancient and forgotten truths..."
+    doctrine_parameter_hostility_override_special_doctrine_is_reach_faith:0 "Considers Reach [faiths|E] and is considered by Reach $game_concept_faiths$ to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of #V Hostile#!"
+    doctrine_parameter_reach_syncretic_actor_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with Reach [faiths|E]"
+    doctrine_parameter_opinion_of_reach_syncretic_recipient_opinion_active:0 ""
+    doctrine_parameter_reach_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_reach_syncretism_name$ [core_tenet|E]"
+    doctrine_parameter_opinion_of_reach_syncretic_actor_opinion_active:0 ""
+    reach_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    reach_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    
+ tenet_malacath_syncretism_name:0 "Worship of Malacath"
+    tenet_malacath_syncretism_alternate_aldmer_name:0 "Worship of Trinimac"
+    tenet_malacath_syncretism_desc:0 "The Spurned God has been part of our customs and prayers for generations. It is time to give him the place he deserved in our pantheon."
+    tenet_malacath_syncretism_alternate_aldmer_desc:0 "The worship of our Hero-God declined after the exile of the old Chimer from the Summerset Isles. The legends surrounding his supposed 'fall' are to be integrated into our cult, and should show how Trinimac did not hesitate to suffer greatly to protect his homeland."
+    doctrine_parameter_hostility_override_special_doctrine_is_malacath_faith:0 "Considers Malacath [faiths|E] and is considered by Malacath $game_concept_faiths$ to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of #V Hostile#!"
+    doctrine_parameter_malacath_syncretic_actor_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with Malacath [faiths|E]"
+    doctrine_parameter_opinion_of_malacath_syncretic_recipient_opinion_active:0 ""
+    doctrine_parameter_malacath_syncretic_recipient_opinion_active:1 "Mutual [EmptyScope.ScriptValue('syncretic_astray_mutual_opinion_bonus_value')|=+0] [opinion|E] bonus with [faiths|E] that have the $tenet_reach_syncretism_name$ [core_tenet|E]"
+    doctrine_parameter_opinion_of_malacath_syncretic_actor_opinion_active:0 ""
+    malacath_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
+    malacath_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
  
+ ## New tenets
  tenet_children_skyrim_name:0 "Children of Skyrim"
     tenet_children_skyrim_desc:0 "Our Gods come not from this place. Ever since our Ancestors lived in Atmora, we worshipped them, and allowed our southern allies to integrate them into their own faith. But we still remember their old names, and revere them as such."
     
@@ -281,19 +323,10 @@
     tenet_witch_worship_desc:0 "Those who are strong enough to wield the powers of Witchcraft should be celebrated, and not rejected. We should not let blind hatred and widespread misunderstanding get in the way of unlocking the powers of the occult."
     doctrine_parameter_potent_witch_become_occultist:0 "Potent [GetTrait('witch').GetName( GetPlayer )] can become Occultists"
     WITCHCRAFT_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes witchcraft [shunned|E] or [criminal|E]"
-    
+ 
+ ## Vanilla edits
  tenet_legalism_alternate_name:0 "Path to Alaxon"
     tenet_legalism_alternate_desc:0 "Our proximity with the Divine requires each and everyone of us to be the best version of themselves. We all have a role to fulfil, and we all must reach perfection."
- 
- ### Syncretism
- nedic_nordic_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- nedic_nordic_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- aldmeri_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- aldmeri_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- yokudan_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- yokudan_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- celestial_syncretic_recipient_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
- celestial_syncretic_actor_opinion_active_opinion_name:0 "$faith_syncretic_opinion_active_control$"
  
  ### Personal deities
  tenet_bhakti_name:0 "Personal deities"

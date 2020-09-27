@@ -224,8 +224,6 @@
 			doctrine = tenet_nedic_nordic_syncretism
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
-			
-			doctrine = unreformed_faith_doctrine
 		}
 		anuic_skaal = {
 			color = { 0.45 0.63 0.63 }
@@ -236,8 +234,6 @@
 			doctrine = tenet_pacifism
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
-			
-			doctrine = unreformed_faith_doctrine
 		}
 	}
 }
