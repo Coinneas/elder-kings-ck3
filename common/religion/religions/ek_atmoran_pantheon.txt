@@ -1,4 +1,4 @@
-atmoran_pantheon = {
+﻿atmoran_pantheon = {
 	family = rf_aurbis
 	graphical_faith = pagan_gfx
 
@@ -224,6 +224,7 @@ atmoran_pantheon = {
 			doctrine = tenet_nedic_nordic_syncretism
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
+			
 			doctrine = unreformed_faith_doctrine
 		}
 		anuic_skaal = {
@@ -235,6 +236,7 @@ atmoran_pantheon = {
 			doctrine = tenet_pacifism
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
+			
 			doctrine = unreformed_faith_doctrine
 		}
 	}

@@ -1,4 +1,4 @@
-##################
+﻿##################
 # Lover relation on_action
 ##################
 on_set_relation_lover = {

@@ -13,20 +13,6 @@ doctrine_core_tenets = {
 		icon = core_tenet_followers
 
 		piety_cost = {
-			# if = {
-				# limit = {
-					# OR = {
-						# religion_tag = judaism_religion
-						# religion_tag = christianity_religion
-						# religion_tag = dualism_religion
-					# }
-				# }
-				# value = faith_tenet_cost_low
-			# }
-			# else = {
-				# value = faith_tenet_cost_mid
-			# }
-			
 			value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
@@ -45,8 +31,10 @@ doctrine_core_tenets = {
 			custom_description = {
 				text = incompatible_tenet_other_syncretism_trigger
 				NOR = {
+					# flag:tenet_nedic_nordic_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_aldmeri_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_yokudan_syncretism = { is_in_list = selected_doctrines }
+					flag:tenet_celestial_syncretism = { is_in_list = selected_doctrines }
 				}
 			}
 		}
@@ -67,20 +55,6 @@ doctrine_core_tenets = {
 		icon = core_tenet_followers
 
 		piety_cost = {
-			# if = {
-				# limit = {
-					# OR = {
-						# religion_tag = judaism_religion
-						# religion_tag = christianity_religion
-						# religion_tag = dualism_religion
-					# }
-				# }
-				# value = faith_tenet_cost_low
-			# }
-			# else = {
-				# value = faith_tenet_cost_mid
-			# }
-			
 			value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
@@ -100,7 +74,9 @@ doctrine_core_tenets = {
 				text = incompatible_tenet_other_syncretism_trigger
 				NOR = {
 					flag:tenet_nedic_nordic_syncretism = { is_in_list = selected_doctrines }
+					# flag:tenet_aldmeri_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_yokudan_syncretism = { is_in_list = selected_doctrines }
+					flag:tenet_celestial_syncretism = { is_in_list = selected_doctrines }
 				}
 			}
 		}
@@ -123,20 +99,6 @@ doctrine_core_tenets = {
 		icon = core_tenet_followers
 
 		piety_cost = {
-			# if = {
-				# limit = {
-					# OR = {
-						# religion_tag = judaism_religion
-						# religion_tag = christianity_religion
-						# religion_tag = dualism_religion
-					# }
-				# }
-				# value = faith_tenet_cost_low
-			# }
-			# else = {
-				# value = faith_tenet_cost_mid
-			# }
-			
 			value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
@@ -157,6 +119,8 @@ doctrine_core_tenets = {
 				NOR = {
 					flag:tenet_nedic_nordic_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_aldmeri_syncretism = { is_in_list = selected_doctrines }
+					# flag:tenet_yokudan_syncretism = { is_in_list = selected_doctrines }
+					flag:tenet_celestial_syncretism = { is_in_list = selected_doctrines }
 				}
 			}
 		}
@@ -179,20 +143,6 @@ doctrine_core_tenets = {
 		icon = core_tenet_followers
 
 		piety_cost = {
-			# if = {
-				# limit = {
-					# OR = {
-						# religion_tag = judaism_religion
-						# religion_tag = christianity_religion
-						# religion_tag = dualism_religion
-					# }
-				# }
-				# value = faith_tenet_cost_low
-			# }
-			# else = {
-				# value = faith_tenet_cost_mid
-			# }
-			
 			value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
@@ -215,9 +165,10 @@ doctrine_core_tenets = {
 			custom_description = {
 				text = incompatible_tenet_other_syncretism_trigger
 				NOR = {
+					flag:tenet_nedic_nordic_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_aldmeri_syncretism = { is_in_list = selected_doctrines }
 					flag:tenet_yokudan_syncretism = { is_in_list = selected_doctrines }
-					flag:tenet_nedic_nordic_syncretism = { is_in_list = selected_doctrines }
+					# flag:tenet_celestial_syncretism = { is_in_list = selected_doctrines }
 				}
 			}
 		}
@@ -239,32 +190,6 @@ doctrine_core_tenets = {
 		icon = core_tenet_holytree
 
 		piety_cost = {
-			# if = {
-				# limit = {
-					# OR = {
-						# religion_tag = hinduism_religion
-					# }
-				# }
-				# value = faith_tenet_cost_high
-			# }
-			# else_if = {
-				# limit = {
-					# OR = {
-						# has_doctrine = pagan_hostility_doctrine
-					# }
-				# }
-				# value = faith_tenet_cost_low
-			# }
-			# else_if = {
-				# limit = {
-					# has_doctrine = abrahamic_hostility_doctrine
-				# }
-				# value = faith_tenet_cost_massive
-			# }
-			# else = {
-				# value = faith_tenet_cost_mid
-			# }
-			
 			value = faith_tenet_cost_mid
 
 			# Multiplier for keeping same tenet
