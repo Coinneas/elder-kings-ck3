@@ -272,7 +272,7 @@ ek_tenets.0010 = {
 		any_relation = { 
 			type = lover
 			OR = {
-				trait = impure
+				has_trait = impure
 				NOT = { has_faith = scope:root.faith }
 			}
 		}
@@ -285,7 +285,7 @@ ek_tenets.0010 = {
 			type = lover
 			limit = {
 				OR = {
-					trait = impure
+					has_trait = impure
 					NOT = { has_faith = scope:root.faith }
 				}
 			}
