@@ -1,6 +1,9 @@
 ﻿namespace = ek_tenets
 
-### Fired by on_birth on action: Gives the Impure trait if the child has any bad congenital trait
+### Various events tied to your faith's tenets
+
+##### Divine Purity
+### Fired by on_birth on action: Gives the Impure trait if the child has any bad congenital trait, or if one of their parents should be considered Impure
 # Gives the trait to the child, if applicable
 ek_tenets.0001 = {
 	type = character_event
@@ -81,26 +84,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 						
 						OR = {
 							AND = {
@@ -162,26 +146,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 					}
 				}
 				
@@ -196,26 +161,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 						
 						OR = {
 							AND = {
@@ -277,26 +223,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 					}
 				}
 				
@@ -378,11 +305,8 @@ ek_tenets.0010 = {
 	option = {
 		name = ek_tenets.0010.optA
 		
-		# Given in the follow up event for the lover
-		show_as_tooltip = {
-			add_trait = impure
-			add_piety_level = -1
-		}
+		add_trait = impure
+		add_piety_level = -1
 		
 		scope:impure_source = { trigger_event = { id = ek_tenets.0011 } }
 	}
@@ -420,8 +344,10 @@ ek_tenets.0011 = {
 		name = ek_tenets.0011.optA
 		
 		scope:impure_target = {
-			add_trait = impure
-			add_piety_level = -1
+			show_as_tooltip = {
+				add_trait_force_tooltip = impure
+				add_piety_level = -1
+			}
 		}
 	}
 }
