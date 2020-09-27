@@ -1404,8 +1404,31 @@ doctrine_core_tenets = {
 		}
 	}
 
+	# EK EDIT: Added special names for Aldmeri faiths
 	tenet_legalism = {
 		icon = core_tenet_bigbook
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = aldmer_religion
+					}
+					desc = tenet_legalism_alternate_name
+				}
+				desc = tenet_legalism_name
+			}
+		}
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = aldmer_religion
+					}
+					desc = tenet_legalism_alternate_desc
+				}
+				desc = tenet_legalism_desc
+			}
+		}
 		piety_cost = {
 			# if = {
 				# limit = {
