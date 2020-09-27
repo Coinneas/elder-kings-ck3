@@ -296,11 +296,6 @@ ek_tenets.0010 = {
 	
 	theme = faith
 	
-	immediate = {
-		add_prestige = medium_prestige_loss
-		add_piety = medium_prestige_loss
-	}
-	
 	# Own it. Keep the relationship, but become Impure
 	option = {
 		name = ek_tenets.0010.optA
