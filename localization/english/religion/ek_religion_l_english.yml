@@ -76,6 +76,19 @@
     herd_mother_desc:1 "An obscure faith practiced by the Horse-Folk, a Yokudan herding people originating from the island of Akos Kasaz. They revere an animist spirit known as the Herd-Mother, who guides the tribe and protects their vast herds of horses."
  
  ## Daedric
+ # Azura
+ azura_religion:1 "Azura"
+    azura_religion_adj:1 "Azura"
+    azura_religion_adherent:1 "Faithful of Azura"
+    azura_religion_adherent_plural:1 "Faithfuls of Azura"
+    azura_religion_desc:0 "Azura is the Prince of dusk and dawn, the magick in-between realms of twilight, and is also known in the Almsivi faith as the Anticipation of Sotha Sil. Unlike most of the Daedric Princes, Azura is generally considered to be benevolent. Proud and graceful, she rules from the vibrant plane of Moonshadow and jealously guards her worshippers. Azura’s Star, an unbreakable soul gem, is her foremost artifact. Azura appreciates steadfast piety but viciously penalizes perceived slights, the most infamous instance being when she transformed the Chimer of Resdayn into the ashen-skinned, red-eyed Dunmer."
+    
+ azura_cult:1 "Cult of Azura"
+    azura_cult_adj:1 "Cult of Azura"
+    azura_cult_adherent:1 "Azura Cultist"
+    azura_cult_adherent_plural:1 "Azura Cultists"
+    azura_cult_desc:0 "Azura is the Prince of dusk and dawn, the magick in-between realms of twilight, and is also known in the Almsivi faith as the Anticipation of Sotha Sil. Unlike most of the Daedric Princes, Azura is generally considered to be benevolent. Proud and graceful, she rules from the vibrant plane of Moonshadow and jealously guards her worshippers. Azura’s Star, an unbreakable soul gem, is her foremost artifact. Azura appreciates steadfast piety but viciously penalizes perceived slights, the most infamous instance being when she transformed the Chimer of Resdayn into the ashen-skinned, red-eyed Dunmer."
+    
  # Malacath
  malacath_religion:1 "Malacath"
     malacath_religion_adj:1 "Malacath"
@@ -335,13 +348,81 @@
  tenet_necromancy_worship_name:0 "Mastery over Undeath"
     tenet_necromancy_worship_desc:0 "We have been blessed with the powers of necromancy. These powers should be considered sacred, and part of our bound with the divine."
     NECROMANCY_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes necromancy [shunned|E] or [criminal|E]"
+    
+ tenet_focused_worship_name:0 "Focused Worship"
+    tenet_focused_worship_desc:0 "While other faiths pretend to revere a wide variety of gods, true worship can only be given to a single deity."
+    doctrine_parameter_no_patron_deities_active:0 "Adherents cannot pick patron deities"
+    doctrine_parameter_resistance_to_heresy_active:0 "$doctrine_parameter_pluralism_pluralistic_resistant_to_heresy$"
  
  ## Vanilla edits
  tenet_legalism_alternate_name:0 "Path to Alaxon"
     tenet_legalism_alternate_desc:0 "Our proximity with the Divine requires each and everyone of us to be the best version of themselves. We all have a role to fulfil, and we all must reach perfection."
  
  ### Personal deities
- tenet_bhakti_name:0 "Personal deities"
- tenet_bhakti_worship_divines_name:0 "Worship of the Divines"
  doctrine_parameter_personal_god_different_names_active:0 "Personal deities will bear a different name"
  doctrine_parameter_additional_personal_gods_active:0 "Can choose aditional personal deities"
+ ## Daedric Patrons
+ # Azura
+ doctrine_parameter_allows_worship_azura_all_doctrines_active:0 "Allows the worship of Azura no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_azura_shunned_doctrines_active:0 "Allows the worship of Azura if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_azura_accepted_doctrines_active:0 "Allows the worship of Azura if the faith's view on Daedric Worship is Accepted"
+ # Boethiah
+ doctrine_parameter_allows_worship_boethiah_all_doctrines_active:0 "Allows the worship of Boethiah no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_boethiah_shunned_doctrines_active:0 "Allows the worship of Boethiah if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_boethiah_accepted_doctrines_active:0 "Allows the worship of Boethiah if the faith's view on Daedric Worship is Accepted"
+ # Clavicus Vile
+ doctrine_parameter_allows_worship_clavicus_all_doctrines_active:0 "Allows the worship of Clavicus Vile no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_clavicus_shunned_doctrines_active:0 "Allows the worship of Clavicus Vile if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_clavicus_accepted_doctrines_active:0 "Allows the worship of Clavicus Vile if the faith's view on Daedric Worship is Accepted"
+ # Hermaeus Mora
+ doctrine_parameter_allows_worship_hermaeus_all_doctrines_active:0 "Allows the worship of Hermaeus Mora no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_hermaeus_shunned_doctrines_active:0 "Allows the worship of Hermaeus Mora if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_hermaeus_accepted_doctrines_active:0 "Allows the worship of Hermaeus Mora if the faith's view on Daedric Worship is Accepted"
+ # Hircine
+ doctrine_parameter_allows_worship_hircine_all_doctrines_active:0 "Allows the worship of Hircine no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_hircine_shunned_doctrines_active:0 "Allows the worship of Hircine if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_hircine_accepted_doctrines_active:0 "Allows the worship of Hircine if the faith's view on Daedric Worship is Accepted"
+ # Malacath
+ doctrine_parameter_allows_worship_malacath_all_doctrines_active:0 "Allows the worship of Malacath no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_malacath_shunned_doctrines_active:0 "Allows the worship of Malacath if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_malacath_accepted_doctrines_active:0 "Allows the worship of Malacath if the faith's view on Daedric Worship is Accepted"
+ # Mehrunes Dagon
+ doctrine_parameter_allows_worship_mehrunes_all_doctrines_active:0 "Allows the worship of Mehrunes Dagon no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_mehrunes_shunned_doctrines_active:0 "Allows the worship of Mehrunes Dagon if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_mehrunes_accepted_doctrines_active:0 "Allows the worship of Mehrunes Dagon if the faith's view on Daedric Worship is Accepted"
+ # Mephala
+ doctrine_parameter_allows_worship_mephala_all_doctrines_active:0 "Allows the worship of Mephala no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_mephala_shunned_doctrines_active:0 "Allows the worship of Mephala if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_mephala_accepted_doctrines_active:0 "Allows the worship of Mephala if the faith's view on Daedric Worship is Accepted"
+ # Meridia
+ doctrine_parameter_allows_worship_meridia_all_doctrines_active:0 "Allows the worship of Meridia no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_meridia_shunned_doctrines_active:0 "Allows the worship of Meridia if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_meridia_accepted_doctrines_active:0 "Allows the worship of Meridia if the faith's view on Daedric Worship is Accepted"
+ # Molag Bal
+ doctrine_parameter_allows_worship_molag_all_doctrines_active:0 "Allows the worship of Molag Bal no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_molag_shunned_doctrines_active:0 "Allows the worship of Molag Bal if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_molag_accepted_doctrines_active:0 "Allows the worship of Molag Bal if the faith's view on Daedric Worship is Accepted"
+ # Namira
+ doctrine_parameter_allows_worship_namira_all_doctrines_active:0 "Allows the worship of Namira no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_namira_shunned_doctrines_active:0 "Allows the worship of Namira if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_namira_accepted_doctrines_active:0 "Allows the worship of Namira if the faith's view on Daedric Worship is Accepted"
+ # Nocturnal
+ doctrine_parameter_allows_worship_nocturnal_all_doctrines_active:0 "Allows the worship of Nocturnal no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_nocturnal_shunned_doctrines_active:0 "Allows the worship of Nocturnal if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_nocturnal_accepted_doctrines_active:0 "Allows the worship of Nocturnal if the faith's view on Daedric Worship is Accepted"
+ # Peryite
+ doctrine_parameter_allows_worship_peryite_all_doctrines_active:0 "Allows the worship of Peryite no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_peryite_shunned_doctrines_active:0 "Allows the worship of Peryite if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_peryite_accepted_doctrines_active:0 "Allows the worship of Peryite if the faith's view on Daedric Worship is Accepted"
+ # Sanguine
+ doctrine_parameter_allows_worship_sanguine_all_doctrines_active:0 "Allows the worship of Sanguine no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_sanguine_shunned_doctrines_active:0 "Allows the worship of Sanguine if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_sanguine_accepted_doctrines_active:0 "Allows the worship of Sanguine if the faith's view on Daedric Worship is Accepted"
+ # Sheogorath
+ doctrine_parameter_allows_worship_sheogorath_all_doctrines_active:0 "Allows the worship of Sheogorath no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_sheogorath_shunned_doctrines_active:0 "Allows the worship of Sheogorath if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_sheogorath_accepted_doctrines_active:0 "Allows the worship of Sheogorath if the faith's view on Daedric Worship is Accepted"
+ # Vaermina
+ doctrine_parameter_allows_worship_vaermina_all_doctrines_active:0 "Allows the worship of Vaermina no matter the faith's view on Daedric Worship"
+ doctrine_parameter_allows_worship_vaermina_shunned_doctrines_active:0 "Allows the worship of Vaermina if the faith's view on Daedric Worship is [shunned|E] or Accepted"
+ doctrine_parameter_allows_worship_vaermina_accepted_doctrines_active:0 "Allows the worship of Vaermina if the faith's view on Daedric Worship is Accepted"

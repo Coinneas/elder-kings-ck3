@@ -240,7 +240,7 @@
 
 			#Tenets
 			doctrine = tenet_monasticism
-			doctrine = tenet_bhakti
+			doctrine = tenet_communion
 			doctrine = tenet_adaptive
 		}
 		
@@ -254,7 +254,7 @@
 	
 			#Tenets
 			doctrine = tenet_monasticism
-			doctrine = tenet_bhakti
+			doctrine = tenet_atmoran_syncretism
 			doctrine = tenet_children_skyrim
 			
 			localization = {
@@ -397,7 +397,7 @@
 
 			#Tenets
 			doctrine = tenet_monasticism
-			doctrine = tenet_bhakti
+			doctrine = tenet_merchant_faith
 			doctrine = tenet_aldmeri_syncretism
 		}
 		
