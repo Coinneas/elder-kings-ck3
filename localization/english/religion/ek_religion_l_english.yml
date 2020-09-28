@@ -323,6 +323,18 @@
     tenet_witch_worship_desc:0 "Those who are strong enough to wield the powers of Witchcraft should be celebrated, and not rejected. We should not let blind hatred and widespread misunderstanding get in the way of unlocking the powers of the occult."
     doctrine_parameter_potent_witch_become_occultist:0 "Potent [GetTrait('witch').GetName( GetPlayer )] can become Occultists"
     WITCHCRAFT_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes witchcraft [shunned|E] or [criminal|E]"
+    
+ tenet_vampire_worship_name:0 "Vampiric Blessing"
+    tenet_vampire_worship_desc:0 "The blessing of Vampirism puts us above the rest of mortalkind. They are mere preys, and we are the hunters."
+    VAMPIRISM_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes vampirism [shunned|E] or [criminal|E]"
+    
+ tenet_lycanthrope_worship_name:0 "Blessings of Lycanthropy"
+    tenet_lycanthrope_worship_desc:0 "We must not forget our roots to nature and to the hunt. The lycanthropes lead the way, as the ultimate hunters."
+    LYCANTHROPY_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes lycanthropy [shunned|E] or [criminal|E]"
+    
+ tenet_necromancy_worship_name:0 "Mastery over Undeath"
+    tenet_necromancy_worship_desc:0 "We have been blessed with the powers of necromancy. These powers should be considered sacred, and part of our bound with the divine."
+    NECROMANCY_MUST_BE_FULLY_ACCEPTED:0 "Incompatible with any [doctrine|E] that makes necromancy [shunned|E] or [criminal|E]"
  
  ## Vanilla edits
  tenet_legalism_alternate_name:0 "Path to Alaxon"

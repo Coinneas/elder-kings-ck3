@@ -635,7 +635,7 @@ doctrine_core_tenets = {
 		
 		can_pick = {
 			custom_description = {
-				text = WITCHCRAFT_MUST_BE_FULLY_ACCEPTED
+				text = witchcraft_must_be_fully_accepted
 				NOR = {
 					flag:doctrine_witchcraft_crime = { is_in_list = selected_doctrines }
 					flag:doctrine_witchcraft_shunned = { is_in_list = selected_doctrines }
@@ -654,6 +654,94 @@ doctrine_core_tenets = {
 				witch
 			}
 		}
+	}
+	
+	tenet_vampire_worship = {
+		icon = core_tenet_festivities
+		
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_vampire_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		
+		can_pick = {
+			custom_description = {
+				text = vampirism_must_be_fully_accepted
+				NOR = {
+					flag:doctrine_vampirism_outlawed = { is_in_list = selected_doctrines }
+					flag:doctrine_vampirism_pragmatic = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+		
+		# TODO: Update when we have a vampire trait line
+		# traits = {
+			# virtues = { vampire = 2 }
+		# }
+	}
+	
+	tenet_lycanthrope_worship = {
+		icon = core_tenet_festivities
+		
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_werewolf_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		
+		can_pick = {
+			custom_description = {
+				text = lycanthropy_must_be_fully_accepted
+				NOR = {
+					flag:doctrine_lycanthropy_outlawed = { is_in_list = selected_doctrines }
+					flag:doctrine_lycanthropy_pragmatic = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+		
+		# TODO: Update when we have a lycan trait line
+		# traits = {
+			# virtues = { lycanthrope = 2 }
+		# }
+	}
+	
+	tenet_necromancy_worship = {
+		icon = core_tenet_festivities
+		
+		piety_cost = {
+			value = faith_tenet_cost_mid
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_necromancy_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		
+		can_pick = {
+			custom_description = {
+				text = necromancy_must_be_fully_accepted
+				NOR = {
+					flag:doctrine_necromancy_outlawed = { is_in_list = selected_doctrines }
+					flag:doctrine_necromancy_pragmatic = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+		
+		# TODO: Update when we have a necromancer trait line
+		# traits = {
+			# virtues = { necromancer = 1 }
+			# virtues = { lich = 3 }
+		# }
 	}
 
 	############################
