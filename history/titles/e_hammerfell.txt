@@ -1,3 +1,0 @@
-e_hammerfell = {
-	3000.1.1 = { change_development_level = 5 }
-}
