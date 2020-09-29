@@ -1,6 +1,9 @@
 ﻿namespace = ek_tenets
 
-### Fired by on_birth on action: Gives the Impure trait if the child has any bad congenital trait
+### Various events tied to your faith's tenets
+
+##### Divine Purity
+### Fired by on_birth on action: Gives the Impure trait if the child has any bad congenital trait, or if one of their parents should be considered Impure
 # Gives the trait to the child, if applicable
 ek_tenets.0001 = {
 	type = character_event
@@ -8,9 +11,7 @@ ek_tenets.0001 = {
 	
 	trigger = {
 		# Must have the Divine Purity tenet
-		faith = {
-			has_doctrine = tenet_divine_purity
-		}
+		faith = { has_doctrine = tenet_divine_purity }
 		
 		OR = {
 			# Has their body tainted
@@ -83,26 +84,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 						
 						OR = {
 							AND = {
@@ -164,26 +146,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 					}
 				}
 				
@@ -198,26 +161,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 						
 						OR = {
 							AND = {
@@ -279,26 +223,7 @@ ek_tenets.0002 = {
 			triggered_desc = {
 				trigger = {
 					scope:impure_character = {
-						OR = {
-							has_trait = physique_bad
-							has_trait = intellect_bad
-							has_trait = physique_bad
-							
-							has_trait = clubfooted
-							has_trait = hunchbacked
-							has_trait = lisping
-							has_trait = stuttering
-							has_trait = dwarf
-							has_trait = giant
-							has_trait = inbred
-							
-							has_trait = spindly
-							has_trait = scaly
-							has_trait = albino
-							has_trait = wheezing
-							has_trait = bleeder
-							has_trait = infertile
-						}
+						has_any_bad_congenital_trait_trigger = yes
 					}
 				}
 				
@@ -317,5 +242,139 @@ ek_tenets.0002 = {
 		name = ek_tenets.0002.optA
 		
 		custom_tooltip = character_is_declared_impure
+	}
+}
+
+### Fired by the on_set_relation_lover_ek effect
+# You have a new lover, but this relationship is impure...
+ek_tenets.0010 = {
+	type = character_event
+	
+	title = ek_tenets.0010.title
+	desc = ek_tenets.0010.desc
+	
+	left_portrait = {
+		character = scope:impure_target
+		animation = shame
+	}
+	
+	right_portrait = {
+		character = scope:impure_source
+		animation = shame
+	}
+	
+	trigger = {
+		# Must have the Divine Purity tenet, and not be already considered Impure
+		faith = { has_doctrine = tenet_divine_purity }
+		NOT = { has_trait = impure }
+		
+		# Must have any lover this is an infidel or Impure
+		any_relation = { 
+			type = lover
+			OR = {
+				trait = impure
+				NOT = { has_faith = scope:root.faith }
+			}
+		}
+	}
+	
+	immediate = {
+		save_scope_as = impure_target
+		
+		random_relation = { 
+			type = lover
+			limit = {
+				OR = {
+					trait = impure
+					NOT = { has_faith = scope:root.faith }
+				}
+			}
+			
+			save_scope_as = impure_source
+		}
+	}
+	
+	theme = faith
+	
+	immediate = {
+		add_prestige = medium_prestige_loss
+		add_piety = medium_prestige_loss
+	}
+	
+	# Own it. Keep the relationship, but become Impure
+	option = {
+		name = ek_tenets.0010.optA
+		
+		add_trait = impure
+		add_piety_level = -1
+		
+		scope:impure_source = { trigger_event = { id = ek_tenets.0011 } }
+	}
+	
+	# Break up
+	option = {
+		name = ek_tenets.0010.optB
+		
+		show_as_tooltip = { remove_relation_lover = scope:impure_source }
+		scope:impure_source = { trigger_event = { id = ek_tenets.0012 } }
+	}
+}
+
+# Your lover will stay with you, even if they are despised by their brethren
+ek_tenets.0011 = {
+	type = character_event
+	
+	title = ek_tenets.0011.title
+	desc = ek_tenets.0011.desc
+	
+	left_portrait = {
+		character = scope:impure_target
+		animation = personality_bold
+	}
+	
+	right_portrait = {
+		character = scope:impure_source
+		animation = admiration
+	}
+	
+	theme = faith
+	
+	# We will keep loving each other, no matter what.
+	option = {
+		name = ek_tenets.0011.optA
+		
+		scope:impure_target = {
+			show_as_tooltip = {
+				add_trait_force_tooltip = impure
+				add_piety_level = -1
+			}
+		}
+	}
+}
+
+# Your lover broke up with you to keep their purity
+ek_tenets.0012 = {
+	type = character_event
+	
+	title = ek_tenets.0012.title
+	desc = ek_tenets.0012.desc
+	
+	left_portrait = {
+		character = scope:impure_target
+		animation = sadness
+	}
+	
+	right_portrait = {
+		character = scope:impure_source
+		animation = disbelief
+	}
+	
+	theme = faith
+	
+	# So be it...
+	option = {
+		name = ek_tenets.0012.optA
+		
+		remove_relation_lover = scope:impure_target
 	}
 }
