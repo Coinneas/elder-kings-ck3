@@ -111,7 +111,7 @@
 			Rafora Rasala Regine Rena Renee Restita Rhea Ria Rilia Romana Rona Rosentia Ruccia Rusia Sabenda Sabina Sabrina Sadas Safia Salonia Sandana Sappho Sarmosia Schlera Scribonia Selena Selene Selvia
 			Senna Septima Serviana Servilia Severa Severia Severina Sibylla Silana Silvia Simplicia Solea Sonolia Sosia Sudia Sura Syloria Tacita Talania Tavia Telesilla Terendras Terran Tertia Theodora Thisa
 			Thonica Thorasa Thraccenia Turia Ulpia Una Urgulanilla Vacia Vala Valaria Valentia Valentina Valga Valoria Vaneria Varinia Vastae Vaudrie Venetia Veraxia Veresa Vesta Vex Vianis Viatrix Viccia
-			Viera Vigdis Vilbia Vilena Vilia Villea Vinicia Viola Vipsania Vistilia Vita Vitellia Vittoria Vodiaka Volcatia Volrina Ysabel_Isabel
+			Viera Vigdis Vilbia Vilena Vilia Villea Vinicia Viola Vipsania Vistilia Vita Vitellia Vittoria Vodiaka Volcatia Volrina Ysabel
 		}
 		
 		dynasty_of_location_prefix = "dynnp_of"
