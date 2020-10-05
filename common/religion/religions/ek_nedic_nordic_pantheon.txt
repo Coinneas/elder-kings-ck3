@@ -72,13 +72,11 @@
 		HighGodNameAlternatePossessive = god_the_divines_name_possessive
 		
 		#Creator
-		HighGodName = god_the_divines_name
-		HighGodNamePossessive = god_the_divines_name_possessive
-		HighGodNameSheHe = CHARACTER_SHEHE_THEY
-		HighGodHerselfHimself = CHARACTER_THEMSELVES
-		HighGodHerHis = CHARACTER_HERHIS_THEIR
-		HighGodNameAlternate = god_the_divines_name
-		HighGodNameAlternatePossessive = god_the_divines_name_possessive
+		CreatorName = god_the_divines_name
+		CreatorNamePossessive = god_the_divines_name_possessive
+		CreatorNameSheHe = CHARACTER_SHEHE_THEY
+		CreatorHerHim = CHARACTER_HERHIM_THEM
+		CreatorHerHis = CHARACTER_HERHIS_THEIR
 
 		#HealthGod
 		HealthGodName = god_dibella_name
