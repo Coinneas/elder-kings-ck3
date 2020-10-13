@@ -49,8 +49,6 @@
 		Faolan
 	}
 	reserved_female_names = {
-		Anna Beatrice Benedicta Brigid Catherine Cecilia Christina Clementia Constance Dorothy Elisabeth Joan Judith Juliana Helen
-		Magdalena Margaret Maria Marine Patricia Philippa Rachel Sarah Sophia Stephania
 	}
 
 	custom_faith_icons = {
