@@ -18,41 +18,41 @@ e_high_rock = {
 
 k_camlorn = {
 	pattern = "pattern_solid.dds"
-	color1 = yellow
-	color2 = yellow
+	color1 = purple
+	color2 = purple
 	colored_emblem = {
-		texture = "ce_griffin_rampant.dds"
-		color1 = "purple"
-		color2 = "purple"
+		texture = "ce_lion_rampant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
 d_camlorn = {
 	pattern = "pattern_solid.dds"
-	color1 = yellow
-	color2 = yellow
+	color1 = purple
+	color2 = purple
 	colored_emblem = {
-		texture = "ce_griffin_rampant.dds"
-		color1 = "purple"
-		color2 = "purple"
+		texture = "ce_lion_rampant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
 d_bhoriane = {
 	pattern = "pattern_solid.dds"
-	color1 = white
+	color1 = orange
 	colored_emblem = {
-		texture = "ce_lion_passant_guardant.dds"
-		color1 = "green"
-		color2 = "black"
+		texture = "ce_star_06_pierced.dds"
+		color1 = "red"
+		color2 = "yellow"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
 d_anticlere = {
-	pattern = "pattern_vertical_stripes_02.dds"
+	pattern = "pattern_vertical_stripes_03.dds"
 	color1 = "black"
 	color2 = "grey"		
 	colored_emblem = {
@@ -92,57 +92,66 @@ d_cambray = {
 
 c_bhoriane = {
 	pattern = "pattern_solid.dds"
-	color1 = white
+	color1 = orange
 	colored_emblem = {
-		texture = "ce_lion_passant_random.dds"
-		color1 = "green"
-		color2 = "black"
-		instance = {	position = { 0.5 0.2 }	scale = { 0.75 0.75 }	}
-		instance = {	position = { 0.5 0.45 }	scale = { 0.75 0.75 }	}
-		instance = {	position = { 0.5 0.7 }	scale = { 0.75 0.75 }	}
-	}	
-}
-
-c_dwynnen = {
-	pattern = "pattern_solid.dds"
-	color1 = rgb { 212 180 105 }
-	colored_emblem = {
-		texture = "ce_falcon.dds"
-		color1 = "black"
-		color2 = "black"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
-	}	
-}
-
-c_urvaius = {
-	pattern = "pattern_solid.dds"
-	color1 = black
-	colored_emblem = {
-		texture = "ce_griffin_rampant.dds"
-		color1 = "yellow"
+		texture = "ce_star_06_pierced.dds"
+		color1 = "red"
 		color2 = "yellow"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
-c_ykalon = {
-	pattern = "pattern_vertical_split_01.dds"
-	color1 = "blue"
-	color2 = "white"		
+c_dwynnen = {
+	pattern = "pattern_solid.dds"
+	color1 = white
 	colored_emblem = {
-		texture = "ce_barbels_addorsed.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
-		mask = { 1 }					
-	}	
-	colored_emblem = {
-		texture = "ce_barbels_addorsed.dds"
+		texture = "ce_border_shield.dds"
 		color1 = "blue"
-		color2 = "blue"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
-		mask = { 2 }					
+		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
 	}
+	colored_emblem = {
+		texture = "ce_wings_addorsed.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = {	position = { 0.5 0.48 }	scale = { 0.7 1.0 }	}
+	}	
+}
+
+c_urvaius = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 180 72 56 }
+	colored_emblem = {
+		texture = "ce_shield_01.dds"
+		color1 = rgb { 93 28 24 }
+		instance = {	position = { 0.5 0.5 }	scale = { 0.35 0.35 }	}
+	}
+	colored_emblem = {
+		texture = "ce_chalice.dds"
+		color1 = rgb { 93 28 24 }
+		instance = {	position = { 0.28 0.25 }	scale = { 0.37 0.37 }	}
+		instance = {	position = { 0.72 0.65 }	scale = { 0.37 0.37 }	}
+		instance = {	position = { 0.72 0.25 }	scale = { 0.37 0.37 }	}
+		instance = {	position = { 0.28 0.65 }	scale = { 0.37 0.37 }	}
+	}	
+}
+
+c_ykalon = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "black"
+	colored_emblem = {
+		texture = "ce_border_shield_rim.dds"
+		color1 = "black"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }					
+}		
+	colored_emblem = {
+		texture = "ce_wolf.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }					
+}
+
 }
 
 c_cambray = {
@@ -158,7 +167,7 @@ c_cambray = {
 
 }
 
-c_glenumbra = {
+c_cryngaine = {
 	pattern = "pattern_solid.dds"
 	color1 = "blue"
 	color2 = "blue"		
@@ -167,6 +176,27 @@ c_glenumbra = {
 		color1 = "grey"
 		color2 = "black"
 		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
+	}	
+
+}
+
+c_glenumbra = {
+	pattern = "pattern_vertical_split_01.dds"
+	color1 = "white"
+	color2 = "red"		
+	colored_emblem = {
+		texture = "ce_tree.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+		mask = { 1 }				
+	}
+	colored_emblem = {
+		texture = "ce_tree.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+		mask = { 2 }				
 	}	
 
 }
@@ -190,14 +220,13 @@ c_aldcroft = {
 }
 
 c_khuras = {
-	pattern = "pattern_shield_01.dds"
-	color1 = "black"
-	color2 = "grey"		
+	pattern = "pattern_solid.dds"
+	color1 = "grey"		
 	colored_emblem = {
 		texture = "ce_fire.dds"
 		color1 = "red"
-		color2 = "orange"
-		instance = { position = { 0.5 0.47 } scale = { 0.57 0.57 }  }					
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
 	}	
 }
 
@@ -218,7 +247,7 @@ c_penmarch = {
 	color1 = "white"
 	color2 = "white"
 	colored_emblem = {
-		texture = "ce_griffin_rampant.dds"
+		texture = "ce_hound_rampant.dds"
 		color1 = "red"
 		color2 = "black"
 		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
@@ -251,7 +280,7 @@ k_daggerfall = {
 		instance = { position = { 0.5 0.485 } scale = { 0.57 0.57 }  }
 	}		
 	colored_emblem = {
-		texture = "ce_double_tressure.dds"
+		texture = "ce_single_tressure.dds"
 		color1 = "yellow"
 		color2 = "yellow"
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
@@ -270,14 +299,24 @@ d_daggerfall = {
 	}			
 }
 
+d_northmoor = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 33 111 104 }
+	colored_emblem = {
+		texture = "ce_eagle.dds"
+		color1 = "brown"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+	}			
+}
+
 d_daenia = {
 	pattern = "pattern_solid.dds"
-	color1 = black
-	color2 = black
+	color1 = green
 	colored_emblem = {
 		texture = "ce_stag.dds"
-		color1 = "white"
-		color2 = "white"
+		color1 = rgb { 140 174 78 }
+		color2 = rgb { 96 29 6 }
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
@@ -321,20 +360,18 @@ d_ilessan = {
 
 d_glenpoint = {
 	pattern = "pattern_solid.dds"
-	color1 = "purple"
-	color2 = "white"		
+	color1 = rgb { 96 72 168 }	
 	colored_emblem = {
 		texture = "ce_owl.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { position = { 0.5 0.485 } scale = { 0.57 0.57 }  }					
-	}	
-	colored_emblem = {
-		texture = "ce_double_tressure.dds"
-		color1 = "white"
+		color1 = rgb { 24 16 49 }
 		color2 = "white"
-		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+		instance = { position = { 0.5 0.485 } scale = { 0.6 0.6 }  }					
 	}
+	colored_emblem = {
+		texture = "ce_single_tressure.dds"
+		color1 = rgb { 24 16 49 }
+		instance = { position = { 0.5 0.485 } scale = { 1.0 1.0 }  }					
+	}		
 }
 
 c_daggerfall = {
@@ -351,15 +388,13 @@ c_daggerfall = {
 
 c_glenpoint = {
 	pattern = "pattern_solid.dds"
-	color1 = "purple"
-	color2 = "white"		
+	color1 = rgb { 96 72 168 }	
 	colored_emblem = {
 		texture = "ce_owl.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
+		color1 = rgb { 24 16 49 }
+		color2 = "white"
+		instance = { position = { 0.5 0.485 } scale = { 0.9 0.9 }  }					
 	}	
-
 }
 
 c_betony = {
@@ -398,33 +433,24 @@ c_tulune = {
 	color1 = "blue"
 	color2 = "blue"		
 	colored_emblem = {
-		texture = "ce_knight.dds"
-		color1 = "grey"
-		color2 = "red"
+		texture = "ce_fleur.dds"
+		color1 = "yellow"
+		color2 = "yellow"
 		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
 	}	
 
 }
 
 c_shalgora = {
-	pattern = "pattern_chief.dds"
-	color1 = "red"
+	pattern = "pattern_solid.dds"
+	color1 = "white"
 	color2 = "white"		
 	colored_emblem = {
-		texture = "ce_ordinary_chevron_5.dds"
-		color1 = "red"
-		color2 = "red"
-		instance = { position = { 0.5 0.65 } scale = { 0.8 0.8 }  }					
+		texture = "ce_tree.dds"
+		color1 = "brown"
+		color2 = "green"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
 	}	
-	colored_emblem = {
-		texture = "ce_ermine_spot.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = {	position = { 0.5 0.2 }	scale = { 0.25 0.25 }	}
-		instance = {	position = { 0.7 0.2 }	scale = { 0.25 0.25 }	}
-		instance = {	position = { 0.3 0.2 }	scale = { 0.25 0.25 }	}
-	}
-
 }
 
 c_baelborne = {
@@ -477,41 +503,48 @@ c_deleyn = {
 	}	
 }
 
+c_northmoor = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 33 111 104 }
+	colored_emblem = {
+		texture = "ce_eagle.dds"
+		color1 = "brown"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+	}			
+}
+
 #k_evermore
 
 k_evermore = {
-	pattern = "pattern_vertical_split_01.dds"	
-	color1 = "white"		
-	color2 = "red"
+	pattern = "pattern_solid.dds"	
+	color1 = "yellow"		
 	colored_emblem = {
-		texture = "ce_eagle_head.dds"
-		color1 = "red"
-		color2 = "red"
-		color3 = "red"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
-		mask = { 1 }
-	}	
+		texture = "ce_bendy_06.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { position = { 0.5 0.5 } rotation = 90 scale = { 1.0 1.0 }  }
+	}
 	colored_emblem = {
-		texture = "ce_eagle_head.dds"
-		color1 = "white"
-		color2 = "white"
-		#color3 =
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
-		mask = { 2 }
-	}				
+		texture = "ce_falcon.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }
+	}		
+			
 }
 
 d_evermore = {
-	pattern = "pattern_solid.dds"	
-	color1 = "white"		
-	color2 = "red"
+	pattern = "pattern_vertical_stripes_03.dds"	
+	color1 = "green"
+	color2 = "yellow"		
 	colored_emblem = {
-		texture = "ce_eagle_head.dds"
-		color1 = "red"
-		color2 = "red"
-		#color3 =
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
-	}				
+		texture = "ce_falcon.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.5 } scale = { 0.65 0.65 }  }
+	}		
+			
 }
 
 d_bangkorai = {
@@ -622,7 +655,7 @@ k_kambria = {
 	color1 = "white"
 	color2 = "green"
 	colored_emblem = {
-		texture = "ce_dragon.dds"
+		texture = "ce_griffin_rampant.dds"
 		color1 = "red"
 		color2 = "red"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
@@ -634,7 +667,7 @@ d_kambria = {
 	color1 = "white"
 	color2 = "green"
 	colored_emblem = {
-		texture = "ce_dragon.dds"
+		texture = "ce_griffin_rampant.dds"
 		color1 = "red"
 		color2 = "red"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
@@ -643,25 +676,25 @@ d_kambria = {
 
 d_phrygias = {
 	pattern = "pattern_solid.dds"
-	color1 = "yellow"
-	color2 = "yellow"		
+	color1 = rgb { 112 64 64 }
+	color2 = "brown"		
 	colored_emblem = {
-		texture = "ce_goat.dds"
-		color1 = "brown"
-		color2 = "black"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
+		texture = "ce_spriggan_head.dds"
+		color1 = green
+		color2 = yellow
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }					
 	}	
 }
 
 c_phrygias = {
 	pattern = "pattern_solid.dds"
-	color1 = "brown"
+	color1 = green
 	color2 = "brown"		
 	colored_emblem = {
-		texture = "ce_goat.dds"
-		color1 = "yellow"
-		color2 = "white"
-		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }					
+		texture = "ce_spriggan_head_02.dds"
+		color1 = rgb { 112 64 64 }
+		color2 = yellow
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }					
 	}	
 }
 
@@ -670,7 +703,7 @@ c_kambria = {
 	color1 = "white"
 	color2 = "white"
 	colored_emblem = {
-		texture = "ce_dragon.dds"
+		texture = "ce_griffin_rampant.dds"
 		color1 = "red"
 		color2 = "black"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
@@ -682,22 +715,16 @@ c_crosswych = {
 	color1 = "blue"
 	color2 = "blue"
 	colored_emblem = {
-		texture = "ce_border_banner.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
-	}
-	colored_emblem = {
 		texture = "ce_crossbow.dds"
-		color1 = "brown"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.8 0.8 }	}
+		color1 = "white"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
 c_king_guard = {
 	pattern = "pattern_solid.dds"
-	color1 = "red"
-	color2 = "red"
+	color1 = "white"
+	color2 = "white"
 	colored_emblem = {
 		texture = "ce_lion_rampant_crown_forked.dds"
 		color1 = "blue"
@@ -754,20 +781,26 @@ d_alcaire = {
 	pattern = "pattern_solid.dds"
 	color1 = orange
 	colored_emblem = {
+		texture = "ce_single_tressure.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
+	}	
+	colored_emblem = {
 		texture = "ce_fox.dds"
 		color1 = "yellow"
-		color2 = "white"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
+		color2 = "yellow"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.6 0.6 }	}
 	}	
 }
 
-d_gauvadon = {
-	pattern = "pattern_diagonal_split_01.dds"
-	color1 = blue
-	color2 = red
+d_gavaudon = {
+	pattern = "pattern_solid.dds"
+	color1 = yellow
+	color2 = yellow
 	colored_emblem = {
 		texture = "ce_bear_rampant.dds"
-		color1 = "yellow"
+		color1 = "black"
 		color2 = "black"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
@@ -776,11 +809,29 @@ d_gauvadon = {
 d_koegria = {
 	pattern = "pattern_solid.dds"
 	color1 = blue
-	color2 = red
+	color2 = blue
 	colored_emblem = {
-		texture = "ce_eagle_double.dds"
-		color1 = "red"
+		texture = "ce_eastern_sun.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = {	position = { 0.5 0.3 }	scale = { 0.5 0.5 }	}
+	}
+	colored_emblem = {
+		texture = "ce_tower.dds"
+		color1 = "white"
 		color2 = "white"
+		instance = {	position = { 0.5 0.6 }	scale = { 0.7 0.7 }	}
+	}	
+}
+
+c_gavaudon = {
+	pattern = "pattern_solid.dds"
+	color1 = yellow
+	color2 = yellow
+	colored_emblem = {
+		texture = "ce_bear_head.dds"
+		color1 = "black"
+		color2 = "black"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
@@ -788,36 +839,43 @@ d_koegria = {
 c_koegria = {
 	pattern = "pattern_solid.dds"
 	color1 = blue
-	color2 = red
+	color2 = blue
 	colored_emblem = {
-		texture = "ce_eagle_double.dds"
+		texture = "ce_eastern_sun.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = {	position = { 0.5 0.3 }	scale = { 0.5 0.5 }	}
+	}
+	colored_emblem = {
+		texture = "ce_tower.dds"
 		color1 = "white"
-		color2 = "red"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
+		color2 = "white"
+		instance = {	position = { 0.5 0.6 }	scale = { 0.7 0.7 }	}
 	}	
 }
 
 c_menevia = {
-	pattern = "pattern_solid.dds"
-	color1 = "orange"
-	color2 = "orange"		
+	pattern = "pattern_shield_01.dds"
+	color1 = rgb { 90 90 112 }
+	color2 = rgb { 63 66 64 }		
 	colored_emblem = {
-		texture = "ce_tiger.dds"
-		color1 = "white"
-		color2 = "black"
-		instance = { position = { 0.5 0.25 } scale = { 0.7 0.8 }  }		
-		instance = { position = { 0.5 0.65 } scale = { 0.7 0.8 }  }					
+		texture = "ce_eastern_sun.dds"
+		color1 = rgb { 211 148 194 }
+		color2 = black
+		instance = { position = { 0.315 0.32 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.685 0.32 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.5 0.62 } scale = { 0.4 0.4 }  }
 	}	
 
 }
 
 c_alcaire = {
 	pattern = "pattern_solid.dds"
-	color1 = white
+	color1 = orange
 	colored_emblem = {
 		texture = "ce_fox.dds"
-		color1 = "orange"
-		color2 = "white"
+		color1 = "yellow"
+		color2 = "yellow"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
@@ -908,16 +966,18 @@ c_steelheart = {
 
 c_dellese = {
 	pattern = "pattern_solid.dds"
-	color1 = yellow
+	color1 = red
 	colored_emblem = {
-		texture = "ce_bend_thin.dds"
-		color1 = "white"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
-	}
+		texture = "ce_bull_passant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.7 0.7 }	}
+	}	
 	colored_emblem = {
-		texture = "ce_trident.dds"
-		color1 = "black"
-		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
+		texture = "ce_border_shield_rim.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
 	}		
 }
 
@@ -928,16 +988,10 @@ k_shornhelm = {
 	color1 = "black"
 	color2 = "black"
 	colored_emblem = {
-		texture = "ce_border_nebuly.dds"
-		color1 = "black"
-		color2 = "yellow"
-		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
-	}
-	colored_emblem = {
-		texture = "ce_eagle_double.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = {	position = { 0.5 0.48 }	scale = { 0.6 0.6 }	}
+		texture = "ce_dragon_double.dds"
+		color1 = "orange"
+		color2 = "orange"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
 
@@ -946,17 +1000,11 @@ d_shornhelm = {
 	color1 = "black"
 	color2 = "black"
 	colored_emblem = {
-		texture = "ce_eagle_double.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = {	position = { 0.5 0.48 }	scale = { 0.57 0.57 }	}
+		texture = "ce_dragon_double.dds"
+		color1 = "orange"
+		color2 = "orange"
+		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
-	colored_emblem = {
-		texture = "ce_border_shield_engrailed_02.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
-	}
 }
 
 
@@ -983,9 +1031,9 @@ c_shornhelm = {
 	color1 = "black"
 	color2 = "black"
 	colored_emblem = {
-		texture = "ce_eagle_double.dds"
-		color1 = "yellow"
-		color2 = "yellow"
+		texture = "ce_dragon_double.dds"
+		color1 = "orange"
+		color2 = "orange"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
@@ -1013,8 +1061,8 @@ c_silverhoof = {
 	color2 = "green"
 	colored_emblem = {
 		texture = "ce_horse_rampant.dds"
-		color1 = "grey"
-		color2 = "grey"
+		color1 = "white"
+		color2 = "white"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
 	}	
 }
@@ -1035,26 +1083,24 @@ d_white_haven = {
 	color1 = "white"
 	color2 = "white"
 	colored_emblem = {
-		texture = "ce_dolphin.dds"
-		color1 = "black"
-		color2 = "grey"
+		texture = "ce_eagle.dds"
+		color1 = yellow
+		color2 = yellow
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
-	}	
-			
+	}
+					
 }
 
 c_white_haven = {
-	pattern = "pattern_ttt.dds"
+	pattern = "pattern_solid.dds"
 	color1 = "white"
-	color2 = "black"
+	color2 = "white"
 	colored_emblem = {
-		texture = "ce_dolphin.dds"
-		color1 = "black"
-		color2 = "grey"
-		instance = {	position = { 0.3 0.59 }	scale = { 0.52 0.52 }	}
-		instance = {	position = { 0.7 0.59 }	scale = { 0.52 0.52 }	}
-	}	
-			
+		texture = "ce_eagle.dds"
+		color1 = yellow
+		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
+	}
+					
 }
 
 c_irmgard = {
@@ -1333,20 +1379,13 @@ c_wrothgar = {
 
 k_northpoint = {
 	pattern = "pattern_solid.dds"
-	color1 = "blue"
-	color2 = "blue"
+	color1 = "green"
 	colored_emblem = {
-		texture = "ce_lion_rampant_crown.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = {	position = { 0.5 0.48 }	scale = { 0.6 0.6 }	}
-	}	
-	colored_emblem = {
-		texture = "ce_border_shield_compony.dds"
-		color1 = "blue"
-		color2 = "yellow"
+		texture = "ce_northpoint.dds"
+		color1 = "grey"
+		color2 = "white"
 		instance = {	position = { 0.5 0.5 }	scale = { 1.0 1.0 }	}
-}
+	}	
 
 }
 
@@ -1492,7 +1531,7 @@ k_balfiera = {
 	color1 =red
 	color2= red
 	colored_emblem = {
-		texture = "ce_bull_passant.dds"
+		texture = "ce_bull_rampant.dds"
 		color1 = "yellow"
 		color2 = "black"
 		instance = {	position = { 0.5 0.5 }	scale = { 0.9 0.9 }	}
@@ -1735,6 +1774,6 @@ k_anequina = {
 		texture = "ce_anequina.dds"
 		color1 = rgb { 182 144 81 }
 		color2 = rgb { 94 73 54 }
-		instance = {	position = { 0.5 0.48 }	scale = { 0.7 0.7 }	}
+		instance = {	position = { 0.5 0.48 }	scale = { 0.9 0.9 }	}
 	}	
 }
